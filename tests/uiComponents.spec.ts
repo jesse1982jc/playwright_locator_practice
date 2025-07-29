@@ -565,6 +565,32 @@ test("sliders 2", async ({ page }) => {
   await expect(tempBox).toContainText("30");
 });
 
+test("sliders 3", async ({ page }) => {
+  await page.goto("https://the-internet.herokuapp.com/horizontal_slider");
+
+  const slider = page.locator(".sliderContainer input");
+
+  // 模擬滑鼠移動
+  await slider.scrollIntoViewIfNeeded();
+  // 新增 slider 的 界限框
+  const sliderBox = await slider.boundingBox();
+  //滑鼠X座標中心
+  const centerX = sliderBox.x + sliderBox.width / 2;
+  //滑鼠Y座標中心
+  const centerY = sliderBox.y + sliderBox.height / 2;
+  //滑鼠Y座標的 4，(總數是5)，所以是 4/5 (5等分裡面佔了4等分)
+  const targetX = sliderBox.x + sliderBox.width * (4 / 5);
+  // const targetY = sliderBox.y + sliderBox.height / 2;
+
+  await page.mouse.move(centerX, centerY);
+  await page.mouse.down();
+  await page.mouse.move(targetX, centerY);
+  await page.mouse.up();
+
+  // 斷言
+  await expect(page.locator("#range")).toHaveText("4");
+});
+
 test("chatGPT", async ({ page }) => {
   await page.getByPlaceholder("Email").click();
   await page.getByLabel("性別").getByRole("radio").check();

@@ -47,3 +47,24 @@ test("drag and drop with iframe 2", async ({ page }) => {
     "High Tatras 4",
   ]);
 });
+
+test("iframe 3", async ({ page }) => {
+  await page.goto("https://jqueryui.com/droppable/");
+
+  const frame = page.frameLocator("#content .demo-frame");
+
+  // // 1.
+  // await frame
+  //   .locator("#draggable p", { hasText: "Drag me to my target" })
+  //   .dragTo(frame.locator("#droppable p", { hasText: "Drop here" }));
+
+  //2.
+  await frame
+    .locator("#draggable p", { hasText: "Drag me to my target" })
+    .hover();
+  await page.mouse.down();
+  await frame.locator("#droppable p", { hasText: "Drop here" }).hover();
+  await page.mouse.up();
+  // 斷言
+  await expect(frame.locator("#droppable")).toContainText("Dropped!");
+});
