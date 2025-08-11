@@ -1,8 +1,22 @@
 import { test, expect } from "@playwright/test";
+test.beforeEach(async ({ page }) => {
+  await page.goto("https://practice.sdetunicorns.com/");
 
+  // 登入
+  //   await page.goto("https://practice.sdetunicorns.com/my-account/");
+  //   await page.locator("#username").fill("jcjchuhu2@gmail.com");
+  //   await page.locator("#password").fill("abcd1234");
+  //   await page.getByRole("checkbox", { name: "Remember me" }).check();
+  //   await page.getByRole("button", { name: "Log in" }).click();
+  //   await page.locator("#menu-item-489").click();
+});
 test("select option", async ({ page }) => {
-  await page.goto("https://practice.sdetunicorns.com/shop/");
-  await page.waitForTimeout(3000);
+  // await page.goto("https://practice.sdetunicorns.com/shop/");
+  await page.locator("nav ul li#menu-item-567", { hasText: "Shop" }).click();
+
+  // 等待元素出現
+  // await page.locator("select.orderby").waitFor({ state: "visible" });
+  await expect(page.locator("select.orderby")).toBeVisible();
 
   //select option 練習
   const select = page.locator("select.orderby");
@@ -67,7 +81,7 @@ test("select option", async ({ page }) => {
       .innerText(); // 因為 $ 跟 400 有斷行，$ 包在 span 裡面，所以用 innerText()
 
     // 把字串的數字的 $ 拿掉，並切頭尾空白，記得轉成數值
-    const perRowPrice = parseInt(perRowPriceText.replace("$", "").trim());
+    const perRowPrice = parseFloat(perRowPriceText.replace("$", "").trim());
 
     // 拿到數量，因為是屬性，用 getAttribute()，但也要轉成數字
     const perRowQuantity = parseInt(
@@ -92,7 +106,7 @@ test("select option", async ({ page }) => {
     .innerText(); // 因為 $ 包在 span 裡面，下面斷行 400，所以要用 innerText()
 
   //把 $ 去，再去頭尾，再轉數字
-  const totalBold = parseInt(totalBoldText.replace("$", "").trim());
+  const totalBold = parseFloat(totalBoldText.replace("$", "").trim());
 
   // 斷言
   expect(totalPrice).toEqual(totalBold);
@@ -100,6 +114,9 @@ test("select option", async ({ page }) => {
 
 test("register account", async ({ page }) => {
   await page.goto("https://practice.sdetunicorns.com/my-account/");
+  // 等待元素出現
+  await expect(page.locator("form.register")).toBeVisible();
+
   await page.locator("#reg_username").fill("Ray");
   await page.locator("#reg_email").fill("jcjcjhuhu2@gmail.com");
   await page.locator("#reg_password").fill("abcd1234");
@@ -109,6 +126,9 @@ test("register account", async ({ page }) => {
 
 test("login account", async ({ page }) => {
   await page.goto("https://practice.sdetunicorns.com/my-account/");
+  // 等待元素出現
+  await expect(page.locator("form.login")).toBeVisible();
+
   await page.locator("#username").fill("jcjchuhu2@gmail.com");
   await page.locator("#password").fill("abcd1234");
   await page.getByRole("checkbox", { name: "Remember me" }).check();
