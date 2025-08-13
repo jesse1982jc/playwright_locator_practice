@@ -41,22 +41,25 @@ test("navigation page", async ({ page }) => {
       .locator("ul.ant-menu-root li.ant-menu-submenu .ant-menu-title-content")
       .first()
       .textContent();
+
     if (!leftButton.includes("基本設定")) {
-      await expect(
-        page
+      expect(
+        await page
           .locator(
             "ul.ant-menu-root li.ant-menu-submenu .ant-menu-title-content"
           )
           .first()
-      ).toContainText(button);
+          .textContent()
+      ).toEqual(button);
     } else {
-      await expect(
-        page
+      expect(
+        await page
           .locator(
             "ul.ant-menu-root li.ant-menu-submenu .ant-menu-title-content"
           )
           .first()
-      ).toContainText("基本設定");
+          .textContent()
+      ).toEqual("基本設定");
     }
 
     await page.goBack();
