@@ -135,3 +135,24 @@ test("login account", async ({ page }) => {
   await page.getByRole("button", { name: "Log in" }).click();
   await page.locator("#menu-item-489").click();
 });
+
+test("blog test", async ({ page }) => {
+  await page.locator("#zak-primary-nav li", { hasText: "Blog" }).click();
+
+  await expect(page.locator("h1.zak-page-title")).toBeVisible();
+
+  await page
+    .locator("#recent-posts-3 ul li", {
+      hasText: "Let’s Building Your Business from Scratch",
+    })
+    .click();
+  await expect(page.locator("h1.zak-page-title")).toHaveText(
+    "Let’s Building Your Business from Scratch"
+  );
+
+  await page.locator(".post-navigation .nav-next").click();
+
+  await expect(
+    page.locator(".zak-page-header__title h1.zak-page-title")
+  ).toHaveText("Successful Marketing Ads for Your Business");
+});
