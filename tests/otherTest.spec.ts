@@ -3,12 +3,12 @@ test.beforeEach(async ({ page }) => {
   await page.goto("https://practice.sdetunicorns.com/");
 
   // 登入
-  //   await page.goto("https://practice.sdetunicorns.com/my-account/");
-  //   await page.locator("#username").fill("jcjchuhu2@gmail.com");
-  //   await page.locator("#password").fill("abcd1234");
-  //   await page.getByRole("checkbox", { name: "Remember me" }).check();
-  //   await page.getByRole("button", { name: "Log in" }).click();
-  //   await page.locator("#menu-item-489").click();
+  await page.goto("https://practice.sdetunicorns.com/my-account/");
+  await page.locator("#username").fill("jcjchuhu2@gmail.com");
+  await page.locator("#password").fill("abcd1234");
+  await page.getByRole("checkbox", { name: "Remember me" }).check();
+  await page.getByRole("button", { name: "Log in" }).click();
+  await page.locator("#menu-item-489").click();
 });
 test("select option", async ({ page }) => {
   // await page.goto("https://practice.sdetunicorns.com/shop/");
@@ -155,4 +155,39 @@ test("blog test", async ({ page }) => {
   await expect(
     page.locator(".zak-page-header__title h1.zak-page-title")
   ).toHaveText("Successful Marketing Ads for Your Business");
+});
+
+test("my account test", async ({ page }) => {
+  await page
+    .locator("#zak-primary-nav ul li", { hasText: "My account" })
+    .click();
+
+  await expect(
+    page.locator(".zak-page-header__title .zak-page-title")
+  ).toHaveText("My account");
+
+  await page
+    .locator(".woocommerce-MyAccount-navigation ul li", {
+      hasText: "Addresses",
+    })
+    .click();
+
+  await page.getByText("Edit Billing address").click();
+
+  await page.locator("#billing_company").fill("ABC co.");
+  await page.locator("select#billing_country").selectOption("TW");
+  await page
+    .getByPlaceholder("House number and street name")
+    .fill("WenXin Rd. No. 186, 20 F");
+
+  // await page
+  //   .locator("input#billing_address_1")
+  //   .fill("WenXin Rd. No. 186, 20 F");
+
+  await page.locator("input#billing_city").fill("Taichung City");
+  await page.locator("input#billing_state").fill("Nantun");
+  // await page.locator("select#billing_state").selectOption("QC");
+  await page.locator("input#billing_postcode").fill("11335");
+  await page.locator("input#billing_phone").fill("0912345678");
+  await page.getByRole("button", { name: "Save address" }).click();
 });
