@@ -192,3 +192,25 @@ test("my account test", async ({ page }) => {
   await page.locator("input#billing_phone").fill("0912345678");
   await page.getByRole("button", { name: "Save address" }).click();
 });
+
+test("contack page", async ({ page }) => {
+  await page.locator("#zak-primary-nav ul li", { hasText: "Contact" }).click();
+
+  // 填寫表單
+  await page.locator("#evf-277-field_ys0GeZISRs-1").fill("testName");
+  await page.locator("#evf-277-field_LbH5NxasXM-2").fill("test@test.com");
+  await page
+    .locator("#evf-277-field_66FR384cge-3")
+    .pressSequentially("+886912345678", { delay: 200 });
+  await page
+    .locator("#evf-277-field_yhGx3FOwr2-4")
+    .pressSequentially("this is a test message for playwright test.", {
+      delay: 150,
+    });
+
+  await page.getByRole("button", { name: "Submit" }).click();
+
+  await expect(page.locator(".everest-forms .everest-forms-notice")).toHaveText(
+    "Thanks for contacting us! We will be in touch with you shortly"
+  );
+});
