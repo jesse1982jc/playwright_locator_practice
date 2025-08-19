@@ -111,6 +111,16 @@ test("select option", async ({ page }) => {
 
   // 斷言
   expect(totalPrice).toEqual(totalBold);
+
+  // 刪除一個購物清單的選項
+  const removeItem = await page
+    .locator('td.product-remove [aria-label="Remove Converse from cart"]')
+    .click();
+
+  //斷言剩下幾個 Item
+  await expect(
+    page.locator('[class="woocommerce-cart-form__cart-item cart_item"]')
+  ).toHaveCount(2);
 });
 
 test("register account", async ({ page }) => {
