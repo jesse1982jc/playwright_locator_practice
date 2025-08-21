@@ -57,7 +57,7 @@ test("select option", async ({ page }) => {
     page.locator(".zak-header-action .cart-page-link .count").first()
   ).toHaveText("3");
 
-  // checkout page item assertion
+  // checkout page item count assertion
   const cartItems = page.locator("form table tbody tr.cart_item");
   await expect(cartItems).toHaveCount(3);
   await expect(cartItems).toContainText([
@@ -121,6 +121,48 @@ test("select option", async ({ page }) => {
   await expect(
     page.locator('[class="woocommerce-cart-form__cart-item cart_item"]')
   ).toHaveCount(2);
+
+  let updatePrice = 0;
+  let updateTotalPrice = 0;
+
+  console.log(allRows);
+
+  for (const row of await allRows.all()) {
+    // 先把 item 數量加 1
+    await row.locator('td[data-title="Quantity"] button.zak-qty-plus').click();
+
+    await page.waitForTimeout(500);
+
+    const perPriceText = await row.locator("td.product-price").innerText();
+    const perPrice = parseFloat(perPriceText.replace("$", "").trim());
+
+    await page.waitForTimeout(500);
+
+    const quantityText = await row
+      .locator('td.product-quantity input[type="number"]')
+      .getAttribute("value");
+    const quantity = parseInt(quantityText);
+    console.log(quantity);
+
+    await page.waitForTimeout(500);
+
+    updatePrice = perPrice * quantity;
+    updateTotalPrice += updatePrice;
+  }
+
+  // 點擊 update cart 更新 subtotal
+  await page.locator('td button[name="update_cart"]').click({ force: true });
+
+  console.log(updatePrice);
+  console.log(updateTotalPrice);
+
+  const totalBoldPriceUpdateText = await page
+    .locator('table tbody td[data-title="Total"]')
+    .innerText();
+  const totalBoldPriceUpdate = parseFloat(
+    totalBoldPriceUpdateText.replace("$", "").trim()
+  );
+  expect(updateTotalPrice).toEqual(totalBoldPriceUpdate);
 });
 
 test("register account", async ({ page }) => {
