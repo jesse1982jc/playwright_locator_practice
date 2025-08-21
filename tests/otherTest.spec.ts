@@ -72,6 +72,7 @@ test("select option", async ({ page }) => {
 
   let totalPrice = 0;
   let price = 0;
+  let runCount1 = 0;
 
   // 用迴圈遍歷 row 的特定 column 單元格
   for (const row of await allRows.all()) {
@@ -97,6 +98,9 @@ test("select option", async ({ page }) => {
 
     // 計算總價(因為遍歷，要疊加)
     totalPrice += price;
+
+    runCount1++;
+    console.log(`執行次數: ${runCount1}`);
   }
 
   console.log(totalPrice);
@@ -122,22 +126,28 @@ test("select option", async ({ page }) => {
     page.locator('[class="woocommerce-cart-form__cart-item cart_item"]')
   ).toHaveCount(2);
 
+  // 商品數量點多件，再按 Cart update， 使總金額 更新
   let updatePrice = 0;
   let updateTotalPrice = 0;
+  let runCount = 0;
 
   console.log(allRows);
 
   for (const row of await allRows.all()) {
     // 先把 item 數量加 1
-    await row.locator('td[data-title="Quantity"] button.zak-qty-plus').click();
+    await row
+      .locator('td[data-title="Quantity"] button.zak-qty-plus')
+      .dblclick();
 
     await page.waitForTimeout(500);
 
+    //單價
     const perPriceText = await row.locator("td.product-price").innerText();
     const perPrice = parseFloat(perPriceText.replace("$", "").trim());
 
     await page.waitForTimeout(500);
 
+    // 數量
     const quantityText = await row
       .locator('td.product-quantity input[type="number"]')
       .getAttribute("value");
@@ -146,15 +156,20 @@ test("select option", async ({ page }) => {
 
     await page.waitForTimeout(500);
 
+    // 單個商品金額 = 單價*數量
     updatePrice = perPrice * quantity;
+    // 所有商品總金額
     updateTotalPrice += updatePrice;
+
+    runCount++;
+
+    console.log(updatePrice);
+    console.log(updateTotalPrice);
+    console.log(`執行幾次: ${runCount}`);
   }
 
   // 點擊 update cart 更新 subtotal
   await page.locator('td button[name="update_cart"]').click({ force: true });
-
-  console.log(updatePrice);
-  console.log(updateTotalPrice);
 
   const totalBoldPriceUpdateText = await page
     .locator('table tbody td[data-title="Total"]')
