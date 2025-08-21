@@ -134,7 +134,7 @@ test("select option", async ({ page }) => {
   console.log(allRows);
 
   for (const row of await allRows.all()) {
-    // 先把 item 數量加 1
+    // 先把 item 數量加 2
     await row
       .locator('td[data-title="Quantity"] button.zak-qty-plus')
       .dblclick();
@@ -145,7 +145,7 @@ test("select option", async ({ page }) => {
     const perPriceText = await row.locator("td.product-price").innerText();
     const perPrice = parseFloat(perPriceText.replace("$", "").trim());
 
-    await page.waitForTimeout(500);
+    await page.waitForTimeout(1000);
 
     // 數量
     const quantityText = await row
