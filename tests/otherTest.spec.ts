@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 test.beforeEach(async ({ page }) => {
   await page.goto("https://practice.sdetunicorns.com/");
+
   await expect(page.locator("img.custom-logo")).toBeVisible();
 
   // 登入
@@ -141,6 +142,9 @@ test("select option", async ({ page }) => {
 
     await page.waitForTimeout(500);
 
+    // 更新購物車 數量 及 金額
+    await page.locator('td button[name="update_cart"]').click({ force: true });
+
     //單價
     const perPriceText = await row.locator("td.product-price").innerText();
     const perPrice = parseFloat(perPriceText.replace("$", "").trim());
@@ -152,9 +156,10 @@ test("select option", async ({ page }) => {
       .locator('td.product-quantity input[type="number"]')
       .getAttribute("value");
     const quantity = parseInt(quantityText);
-    console.log(quantity);
 
     await page.waitForTimeout(500);
+
+    console.log(quantity);
 
     // 單個商品金額 = 單價*數量
     updatePrice = perPrice * quantity;
@@ -169,15 +174,34 @@ test("select option", async ({ page }) => {
   }
 
   // 點擊 update cart 更新 subtotal
-  await page.locator('td button[name="update_cart"]').click({ force: true });
+  // await page.locator('td button[name="update_cart"]').click({ force: true });
 
+  // 找 cart totals 的 Total
   const totalBoldPriceUpdateText = await page
-    .locator('table tbody td[data-title="Total"]')
+    .locator('table tbody tr.order-total td[data-title="Total"] strong bdi')
     .innerText();
-  const totalBoldPriceUpdate = parseFloat(
-    totalBoldPriceUpdateText.replace("$", "").trim()
+
+  let totalBoldPriceUpdateTextNo$AndSpaceText = totalBoldPriceUpdateText
+    .replace("$", "")
+    .trim();
+
+  // 去掉 , 逗號(多個逗號時)
+  while (totalBoldPriceUpdateTextNo$AndSpaceText.includes(",")) {
+    totalBoldPriceUpdateTextNo$AndSpaceText =
+      totalBoldPriceUpdateTextNo$AndSpaceText.replace(",", "");
+  }
+
+  const totalBoldPriceUpdateNo$AndSpaceNumber = parseFloat(
+    totalBoldPriceUpdateTextNo$AndSpaceText
   );
-  expect(updateTotalPrice).toEqual(totalBoldPriceUpdate);
+  console.log(totalBoldPriceUpdateNo$AndSpaceNumber);
+
+  // const totalBoldPriceUpdate = parseFloat(
+  //   totalBoldPriceUpdateText.replace("$", "").trim()
+  // );
+
+  // 斷言總價
+  expect(updateTotalPrice).toEqual(totalBoldPriceUpdateNo$AndSpaceNumber);
 });
 
 test("register account", async ({ page }) => {
