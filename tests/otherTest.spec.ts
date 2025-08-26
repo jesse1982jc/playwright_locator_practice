@@ -284,7 +284,7 @@ test("my account test", async ({ page }) => {
   await page.getByRole("button", { name: "Save address" }).click();
 });
 
-test("contack page", async ({ page }) => {
+test("contact page", async ({ page }) => {
   await page.locator("#zak-primary-nav ul li", { hasText: "Contact" }).click();
 
   // 填寫表單
