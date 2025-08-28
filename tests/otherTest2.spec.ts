@@ -20,4 +20,7 @@ test("login", async ({ page }) => {
 
   await page.getByPlaceholder("搜尋國家").fill("886");
   await page.getByText(" +886 Taiwan (台灣) ").click();
+
+  await page.getByPlaceholder("手機號碼").fill("972356167");
+  await page.getByRole("button", { name: "下一步" }).click();
 });
