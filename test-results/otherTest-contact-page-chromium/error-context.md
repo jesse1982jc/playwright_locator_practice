@@ -1,0 +1,294 @@
+# Page snapshot
+
+```yaml
+- link "Skip to content":
+  - /url: "#zak-content"
+- banner:
+  - link "Practice E-Commerce Site":
+    - /url: https://practice.sdetunicorns.com/
+    - img "Practice E-Commerce Site"
+  - paragraph:
+    - link "Practice E-Commerce Site":
+      - /url: https://practice.sdetunicorns.com/
+  - paragraph: SDET Unicorns
+  - navigation:
+    - list:
+      - listitem:
+        - link "Home":
+          - /url: https://practice.sdetunicorns.com/
+      - listitem:
+        - link "About":
+          - /url: https://practice.sdetunicorns.com/about/
+      - listitem:
+        - link "Shop":
+          - /url: https://practice.sdetunicorns.com/shop/
+      - listitem:
+        - link "Blog":
+          - /url: https://practice.sdetunicorns.com/blog/
+      - listitem:
+        - link "Contact":
+          - /url: https://practice.sdetunicorns.com/contact/
+      - listitem:
+        - link "My account":
+          - /url: https://practice.sdetunicorns.com/my-account/
+  - link:
+    - /url: "#"
+    - img
+  - listitem:
+    - link "0":
+      - /url: https://practice.sdetunicorns.com/cart/
+      - img
+      - text: "0"
+  - link "Courses":
+    - /url: https://sdetunicorns.com/courses
+- heading [level=5]
+- 'heading "Special Sale: Elevate Your SDET Skills! 🔥" [level=3]':
+  - 'heading "Special Sale: Elevate Your SDET Skills! 🔥" [level=2]'
+- heading "Elevate your career with our special sale! Dive into our extensive SDET courses. Don't miss out – this limited-time offer is your ticket to advancing your skills. Explore our courses and begin your transformative journey now. ⏳" [level=5]
+- link "Learn more":
+  - /url: https://sdetunicorns.com/academy
+- heading "Think different. Make different." [level=1]
+- paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed proin eget eu sit nec risus. Sed ut quam integer a nisl amet. Ed ut quam integer a nisl amet
+- link "get started":
+  - /url: "#get-started"
+- heading "Begin your test automation journey! Check out these courses by clicking on the links below -" [level=2]
+- heading "💻 Master API Test Automation using TypeScript" [level=2]:
+  - link "💻 Master API Test Automation using TypeScript":
+    - /url: https://sdetunicorns.com/course/master-api-test-automation-using-typescript/
+- heading "👩🏻‍💻 Get started with WebdriverIO - Complete Beginner Course" [level=2]:
+  - link "👩🏻‍💻 Get started with WebdriverIO - Complete Beginner Course":
+    - /url: https://sdetunicorns.com/course/webdriverio-complete-beginner-course/
+- heading "👨🏽‍💻 Learn Mobile Automation with Appium 2.0 and WebdriverIO" [level=2]:
+  - link "👨🏽‍💻 Learn Mobile Automation with Appium 2.0 and WebdriverIO":
+    - /url: https://sdetunicorns.com/course/mobile-automation-with-appium-2-0-and-webdriverio/
+- heading "👨🏼‍💻 Learn Web Automation with Playwright Test using Typescript" [level=2]:
+  - link "👨🏼‍💻 Learn Web Automation with Playwright Test using Typescript":
+    - /url: https://sdetunicorns.com/course/playwright-complete-beginner-course/
+- figure
+- heading "Research" [level=5]
+- figure
+- heading "Ideas" [level=5]
+- figure
+- heading "Pixel Perfect" [level=5]
+- figure
+- heading "Seo Friendly" [level=5]
+- figure
+- heading "Design" [level=5]
+- figure
+- heading "Support" [level=5]
+- heading "Zakra Invites You To Build Your Next Site" [level=3]
+- paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. At in proin lacus, sed morbi pulvinar malesuada duis.
+- paragraph: Viverra pellentesque enim mattis cursus lorem cras est augue. Sit lectus nisl velit rutrum. In quis quis vitae vitae. Sollicitudin rhoncus sit sed odio tristique id. Nisl turpis sed fames sed egestas et. Massa, id platea elit diam scelerisque.
+- heading "Our Awesome Portfolio" [level=3]
+- paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, sit sed accumsan, viverra sociis ullamcorper aenean fermentum.
+- figure:
+  - link:
+    - /url: https://i0.wp.com/practice.sdetunicorns.com/wp-content/uploads/2020/06/portfolio-image-A.jpg?ssl=1
+- figure:
+  - link:
+    - /url: https://i0.wp.com/practice.sdetunicorns.com/wp-content/uploads/2020/06/portfolio-image-E.jpg?ssl=1
+- figure:
+  - link:
+    - /url: https://i0.wp.com/practice.sdetunicorns.com/wp-content/uploads/2020/06/portfolio-image-F.jpg?ssl=1
+- figure:
+  - link:
+    - /url: https://i0.wp.com/practice.sdetunicorns.com/wp-content/uploads/2020/06/portfolio-image-C.jpg?ssl=1
+- figure:
+  - link:
+    - /url: https://i0.wp.com/practice.sdetunicorns.com/wp-content/uploads/2020/06/portfolio-image-H.jpg?ssl=1
+- figure:
+  - link:
+    - /url: https://i0.wp.com/practice.sdetunicorns.com/wp-content/uploads/2020/06/portfolio-image-B.jpg?ssl=1
+- figure:
+  - link:
+    - /url: https://i0.wp.com/practice.sdetunicorns.com/wp-content/uploads/2020/06/portfolio-image-D.jpg?ssl=1
+- figure:
+  - link:
+    - /url: https://i0.wp.com/practice.sdetunicorns.com/wp-content/uploads/2020/06/portfolio-image-G.jpg?ssl=1
+- heading "Plan & Pricing" [level=3]
+- paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit massa condimentum enim, nisl vitae. Ultricies aliquet proin egestas donec viverra turpis luctus gravid
+- heading "Silver" [level=4]
+- text: per month $ 0
+- list:
+  - listitem: 1 User
+  - listitem: 3 Projects
+  - listitem: Download Prototypes
+  - listitem: 1 Year Repair Coverage
+  - listitem: Monthly Reports
+  - listitem: 7/24 Support
+- link "Get Started":
+  - /url: "#"
+- heading "Gold" [level=4]
+- text: per month $ 0
+- list:
+  - listitem: 3 User
+  - listitem: 10 Projects
+  - listitem: Download Prototypes
+  - listitem: 3 Year Repair Coverage
+  - listitem: Weekly Reports
+  - listitem: 7/24 Support
+- link "Get Started":
+  - /url: "#"
+- heading "Platinum" [level=4]
+- text: per month $ 0
+- list:
+  - listitem: Unlimited User
+  - listitem: Unlimited Projects
+  - listitem: Download Prototypes
+  - listitem: 5 Repair Coverage
+  - listitem: Daily Reports
+  - listitem: 7/24 Support
+- link "Get Started":
+  - /url: "#"
+- heading "Meet Our Team" [level=3]
+- paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, sit sed accumsan, viverra sociis ullamcorper aenean fermentum.
+- figure:
+  - link:
+    - /url: /about
+- heading "Desirae Dias" [level=4]:
+  - link "Desirae Dias":
+    - /url: /about
+- paragraph: CEO
+- figure:
+  - link:
+    - /url: /about
+- heading "Madelyn Torff" [level=4]:
+  - link "Madelyn Torff":
+    - /url: /about
+- paragraph: Marketing Head
+- figure:
+  - link:
+    - /url: /about
+- heading "Tiana Gouse" [level=4]:
+  - link "Tiana Gouse":
+    - /url: /about
+- paragraph: Project Manager
+- figure:
+  - link:
+    - /url: /about
+- heading "Livia Passaquin" [level=4]:
+  - link "Livia Passaquin":
+    - /url: /about
+- paragraph: Director
+- heading "Client Reveiws" [level=3]
+- paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit massa condimentum enim, nisl vitae. Ultricies aliquet proin egestas donec viverra turpis luctus gravid
+- text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit massa condimentum enim, nisl vitae. Ultricies aliquet proin egestas donec viverra turpis luctus gravida ipsum. Mattis tempus ut egestas habitant dolor massa, id enim. Vitae nec non diam posuere nullam. Neque pharetra bibendum et ornare non risus, Jessica Alba Manager Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit massa condimentum enim, nisl vitae. Ultricies aliquet proin egestas donec viverra turpis luctus gravida ipsum. Mattis tempus ut egestas habitant dolor massa, id enim. Vitae nec non diam posuere nullam. Neque pharetra bibendum et ornare non risus, Will Brand Manager Client Trust 0 k Experts 0 Experience 0 Awards 0
+- heading "Latest Posts & Articles" [level=3]
+- paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, sit sed accumsan, viverra sociis ullamcorper aenean fermentum.
+- figure:
+  - link:
+    - /url: https://zakrademos.com/agency/2020/06/19/successful-marketing-ads-for-your-business/
+- heading "Successful Marketing Ads for Your Business" [level=4]:
+  - link "Successful Marketing Ads for Your Business":
+    - /url: https://zakrademos.com/agency/2020/06/19/successful-marketing-ads-for-your-business/
+- paragraph: Lorem ipsum dolor sit amet, Tetur adipiscing elit. Atempor scelerisque olor sit mauris.
+- link "Read more":
+  - /url: https://zakrademos.com/agency/2020/06/19/successful-marketing-ads-for-your-business/
+- figure:
+  - link:
+    - /url: https://zakrademos.com/agency/2020/06/19/lets-building-your-business-from-scratch/
+- heading "Let’s Building Your Business from Scratch" [level=4]:
+  - link "Let’s Building Your Business from Scratch":
+    - /url: https://zakrademos.com/agency/2020/06/19/lets-building-your-business-from-scratch/
+- paragraph: Orem ipsum dolor sit amet, siy dffee consectetur adipiscing elit. Massa iaculis sem aliquet neque.
+- link "Read more":
+  - /url: https://zakrademos.com/agency/2020/06/19/lets-building-your-business-from-scratch/
+- figure:
+  - link:
+    - /url: https://zakrademos.com/agency/2020/06/19/the-best-place-to-invest-your-money/
+- heading "The Best Place to Invest Your Money" [level=4]:
+  - link "The Best Place to Invest Your Money":
+    - /url: https://zakrademos.com/agency/2020/06/19/the-best-place-to-invest-your-money/
+- paragraph: Rem ipsum dolor sit amet, Nem consectetur adipiscing elit. A tempor scelerisque mauris.
+- link "Read more":
+  - /url: https://zakrademos.com/agency/2020/06/19/the-best-place-to-invest-your-money/
+- figure:
+  - link:
+    - /url: https://zakrademos.com/agency/2020/06/18/the-big-seminar-for-your-right-investment/
+- heading "The Big Seminar for Your Right Investment" [level=4]:
+  - link "The Big Seminar for Your Right Investment":
+    - /url: https://zakrademos.com/agency/2020/06/18/the-big-seminar-for-your-right-investment/
+- paragraph: Rem ipsum dolor sit amet, Nem consectetur adipiscing elit. A tempor scelerisque mauris.
+- link "Read more":
+  - /url: https://zakrademos.com/agency/2020/06/18/the-big-seminar-for-your-right-investment/
+- heading "Have Any Questions?" [level=3]
+- paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit massa condimentum enim, nisl vitae. Ultricies aliquet proin egestas donec viverra turpis luctus gravida ipsum.
+- link "Contact us":
+  - /url: http://practice.sdetunicorns.com/contact
+- region "Image Carousel":
+  - group "1 of 6":
+    - figure:
+      - img "logo-sephora-a"
+  - group "2 of 6":
+    - figure:
+      - img "logo-coast-b"
+  - group "3 of 6":
+    - figure:
+      - img "logo-warehouse-c"
+  - group "4 of 6":
+    - figure:
+      - img "logo-wegmans-d"
+  - group "5 of 6":
+    - figure:
+      - img "logo-neuhaus-e"
+  - group "6 of 6":
+    - figure:
+      - img "logo-kiehls-f"
+- list:
+  - listitem:
+    - link:
+      - /url: "#"
+  - listitem:
+    - link:
+      - /url: "#"
+  - listitem:
+    - link:
+      - /url: "#"
+  - listitem:
+    - link:
+      - /url: "#"
+  - listitem:
+    - link:
+      - /url: "#"
+- contentinfo:
+  - paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit feugiat sit purus varius. Non in turpis tincidunt nulla. Condimentum ultrices nunc odio ante.
+  - heading "Quick Links" [level=2]
+  - list:
+    - listitem:
+      - link "Home":
+        - /url: https://practice.sdetunicorns.com/
+    - listitem:
+      - link "About":
+        - /url: https://practice.sdetunicorns.com/about/
+    - listitem:
+      - link "Blog":
+        - /url: https://practice.sdetunicorns.com/blog/
+    - listitem:
+      - link "Contact":
+        - /url: https://practice.sdetunicorns.com/contact/
+    - listitem:
+      - link "Support Form":
+        - /url: https://practice.sdetunicorns.com/support-form/
+  - heading "Latest Posts" [level=2]
+  - list:
+    - listitem:
+      - link "IFrame Sample":
+        - /url: https://practice.sdetunicorns.com/iframe-sample/
+    - listitem:
+      - link "Successful Marketing Ads for Your Business":
+        - /url: https://practice.sdetunicorns.com/successful-marketing-ads-for-your-business/
+    - listitem:
+      - link "Let’s Building Your Business from Scratch":
+        - /url: https://practice.sdetunicorns.com/lets-building-your-business-from-scratch/
+  - heading "Contact Us" [level=2]
+  - paragraph: "Ph. : +(123) 456-7890"
+  - paragraph: "Email : first.last@demos.com"
+  - paragraph: "Loc : Moon Street , 446 Jupiter"
+  - paragraph: "Open : 9AM – 6PM (Mon – Fri)"
+  - paragraph:
+    - text: Copyright © 2020
+    - link "SDET Unicorns":
+      - /url: https://sdetunicorns.com/
+- text: desktop
+- status
+```

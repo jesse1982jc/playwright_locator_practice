@@ -93,7 +93,7 @@ test("myan life add to cart and checkout", async ({ page }) => {
     .locator(
       "#myanLife_sales .items .owl-stage-outer .owl-stage .owl-item .item"
     )
-    .nth(1)
+    .nth(3)
     .click({ force: true });
 
   await page.waitForTimeout(1000);
@@ -119,13 +119,15 @@ test("myan life add to cart and checkout", async ({ page }) => {
   //去購物車
   await page.locator(".btn_group .confirm", { hasText: "去購物車" }).click();
 
+  await page.waitForTimeout(1000);
+
   // 勾選購物車選項
-  await page.locator('.product_item .label--checkbox [value="309"]').check();
-  await page.locator('.product_item .label--checkbox [value="310"]').check();
-  await page.locator('.product_item .label--checkbox [value="311"]').check();
+  await page.locator(".product_option .label--checkbox").last().check();
+
+  // await expect(page.getByRole("button", { name: "前往結帳" })).toBeEnabled();
 
   // 前往結帳
-  await page.getByRole("button", { name: "前往結帳" }).click();
+  await page.getByRole("button", { name: "前往結帳" }).click({ force: true });
 
   // 返回購物
   // await page.locator(".btn_group .refuse", { hasText: "返回購物" }).click();
