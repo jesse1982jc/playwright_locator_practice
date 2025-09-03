@@ -139,3 +139,109 @@ test("myan life add to cart and checkout", async ({ page }) => {
   //   .nth(1)
   //   .click();
 });
+
+test("add the tickets", async ({ page }) => {
+  // 找到免費的 酷碰券，點一下進該卷的商品頁
+  await page
+    .locator("header h2.notranslate", {
+      hasText:
+        "Hi Spicy Hotpot ( 29% Discount For 3 Person Set & 2 Person Set)",
+    })
+    .click();
+
+  // 等待 "加入票夾" 大按鈕出現
+  await page.waitForSelector(".download_bar .coupon_download", {
+    state: "visible",
+  });
+
+  // 點擊 加入票夾 (大按鈕)
+  await page.locator(".download_bar .coupon_download").click();
+
+  // 等待小彈窗出現
+  // await page.waitForSelector(".coupon_content", { state: "visible" });
+
+  await page.waitForTimeout(2000);
+
+  console.log(await page.locator(".coupon_content").count());
+  console.log(await page.locator("a#download_btn_id").count());
+  console.log(await page.locator("#canvas").count());
+
+  // const popupWindow = page.locator(".coupon_content");
+  // await popupWindow.evaluate((el) => el.setAttribute("aria-hidden", "false"));
+
+  // await expect(page.locator(".coupon_content")).toBeVisible();
+
+  // 等待小彈窗的"加入票夾"的按鈕出現
+  // await page.waitForSelector("a#download_btn_id", {
+  //   state: "visible",
+  // });
+
+  // 小彈窗 點擊 加入票夾
+  // await page
+  //   .locator("a#download_btn_id", { hasText: "加入票夾" })
+  //   .click({ force: true });
+
+  // await page.locator("a#download_btn_id").evaluate((el) => el.click());
+
+  // 小彈窗 點擊 加入票夾
+  const addTicketBtn = page.locator("a#download_btn_id");
+  if (await addTicketBtn.isVisible()) {
+    await addTicketBtn.click();
+  } else {
+    await addTicketBtn.evaluate((el) => {
+      el.dispatchEvent(new Event("click", { bubbles: true }));
+    });
+  }
+
+  // await page.locator("a#download_btn_id").evaluate((el) => {
+  //   el.dispatchEvent(new Event("click", { bubbles: true }));
+  // });
+});
+
+test("add to ticker2", async ({ page }) => {
+  await page.waitForTimeout(1000);
+
+  // 點擊左側的 < 箭頭
+  await page.locator(".owl-nav .owl-prev").nth(3).click();
+
+  await page.waitForTimeout(1000);
+
+  // 等待要加入票夾的商品券顯示完全
+  await page.waitForSelector(
+    '.coupon_download[data-title="Aurica Aesthetic Center"]',
+    { state: "visible" }
+  );
+
+  // 點擊該商品進入商品詳細頁
+  await page
+    .locator("header h2", { hasText: "Aurica Aesthetic Center" })
+    .click();
+
+  // await page.locator(".download_bar .coupon_download").click({ timeout: 2000 });
+
+  // await page.waitForSelector(".coupon_content", { state: "visible" });
+
+  // 加入票夾 大按鈕
+  const addTicketLargeBtn = page.locator("a.coupon_download");
+  // 確定 加入票夾 大按鈕 是否顯示在畫面上
+  await addTicketLargeBtn.isVisible();
+  // 讓該元素顯示在畫面上
+  await addTicketLargeBtn.scrollIntoViewIfNeeded();
+  // 點擊「加入票夾」大按鈕
+  await addTicketLargeBtn.click();
+
+  // 確認小彈窗全部 是否顯示在畫面上
+  await page.locator(".coupon_content").isVisible();
+
+  // 確認小彈窗上面的「加入票夾」小按鈕是否在畫面上
+  await page.locator("a#download_btn_id").isVisible();
+
+  // await page.locator("a#download_btn_id").click();
+
+  // 點擊 加入票夾小按鈕
+  await page
+    .locator("a#download_btn_id")
+    .evaluate((el: HTMLElement) => el.click());
+
+  // await page.waitForSelector("a#download_btn_id", { state: "visible" });
+});
