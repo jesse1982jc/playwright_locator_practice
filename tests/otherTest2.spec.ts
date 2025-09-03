@@ -243,5 +243,8 @@ test("add to ticker2", async ({ page }) => {
     .locator("a#download_btn_id")
     .evaluate((el: HTMLElement) => el.click());
 
+  // 點擊 x 按鈕關閉小彈窗
+  // await page.locator("svg .close_coupon_w").click();
+
   // await page.waitForSelector("a#download_btn_id", { state: "visible" });
 });
