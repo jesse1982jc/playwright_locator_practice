@@ -188,8 +188,10 @@ test("add the tickets", async ({ page }) => {
   if (await addTicketBtn.isVisible()) {
     await addTicketBtn.click();
   } else {
-    await addTicketBtn.evaluate((el) => {
-      el.dispatchEvent(new Event("click", { bubbles: true }));
+    // await addTicketBtn.evaluate((el) => {
+    // el.dispatchEvent(new Event("click", { bubbles: true }));
+    await addTicketBtn.evaluate((el: HTMLElement) => {
+      el.click();
     });
   }
 
@@ -236,7 +238,22 @@ test("add to ticker2", async ({ page }) => {
   // 確認小彈窗上面的「加入票夾」小按鈕是否在畫面上
   await page.locator("a#download_btn_id").isVisible();
 
+  await page.locator("a#download_btn_id").waitFor({ state: "attached" });
+
+  // await expect(page.locator("a#download_btn_id")).toBeVisible();
+
   // await page.locator("a#download_btn_id").click();
+
+  // const info = await page.locator("a#download_btn_id").evaluate((el) => {
+  //   const style = window.getComputedStyle(el);
+  //   return {
+  //     display: style.display,
+  //     visibility: style.visibility,
+  //     opacity: style.opacity,
+  //     rect: el.getBoundingClientRect(),
+  //   };
+  // });
+  // console.log(info);
 
   // 點擊 加入票夾小按鈕
   await page
