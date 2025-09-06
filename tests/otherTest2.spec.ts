@@ -1,35 +1,36 @@
 import { test, expect } from "@playwright/test";
+import { PagerModule } from "ng2-smart-table/lib/components/pager/pager.module";
 import { timeout } from "rxjs-compat/operator/timeout";
 
-test.beforeEach(async ({ page }) => {
-  await page.goto("https://www.myanlife.com.mm/", { timeout: 10000 });
-  const languageBtn = page.locator("header .lang_select").first();
+// test.beforeEach(async ({ page }) => {
+//   await page.goto("https://www.myanlife.com.mm/", { timeout: 10000 });
+//   const languageBtn = page.locator("header .lang_select").first();
 
-  // 選語系 繁中
-  await languageBtn.click();
-  await page
-    .locator(".lang_list .lang_list_item", { hasText: "繁體中文" })
-    .first()
-    .click();
+//   // 選語系 繁中
+//   await languageBtn.click();
+//   await page
+//     .locator(".lang_list .lang_list_item", { hasText: "繁體中文" })
+//     .first()
+//     .click();
 
-  const loginRegisterBtn = page.locator("header .login_btn").first();
-  await loginRegisterBtn.click();
+//   const loginRegisterBtn = page.locator("header .login_btn").first();
+//   await loginRegisterBtn.click();
 
-  // await page.waitForSelector(".two-part-flexrow-style");
-  await page.waitForTimeout(1000);
+//   // await page.waitForSelector(".two-part-flexrow-style");
+//   await page.waitForTimeout(1000);
 
-  await expect(page.locator(".two-part-flexrow-style").first()).toBeVisible();
+//   await expect(page.locator(".two-part-flexrow-style").first()).toBeVisible();
 
-  const emailLogin = page.locator('.login-form-area [data-logintype="email"]', {
-    hasText: "信箱",
-  });
-  await emailLogin.click();
+//   const emailLogin = page.locator('.login-form-area [data-logintype="email"]', {
+//     hasText: "信箱",
+//   });
+//   await emailLogin.click();
 
-  await page.locator("#login_email").fill("jcjchuhu2@gmail.com");
-  await page.locator("#login_password").fill("nmbooks4801");
-  await page.locator("input#keep_login").check();
-  await page.getByRole("button", { name: "登入" }).click();
-});
+//   await page.locator("#login_email").fill("jcjchuhu2@gmail.com");
+//   await page.locator("#login_password").fill("nmbooks4801");
+//   await page.locator("input#keep_login").check();
+//   await page.getByRole("button", { name: "登入" }).click();
+// });
 
 test("login caca taxi", async ({ page }) => {
   await page.goto("https://www.cacataxi.com/", { timeout: 10000 });
@@ -264,4 +265,136 @@ test("add to ticker2", async ({ page }) => {
   // await page.locator("svg .close_coupon_w").click();
 
   // await page.waitForSelector("a#download_btn_id", { state: "visible" });
+});
+
+test("login use mobile phone", async ({ page }) => {
+  await page.goto("https://www.myanlife.com.mm/", { timeout: 10000 });
+
+  // 更改語系
+  await page
+    .locator("header .lang_select .lang_title", {
+      hasText: "English",
+    })
+    .first()
+    .click();
+
+  await page
+    .locator("header .lang_select .lang_list .lang_list_item", {
+      hasText: "繁體中文",
+    })
+    .first()
+    .click();
+
+  //點右上角 登入/註冊
+  await page
+    .locator("header .login_btn", { hasText: "登入/註冊" })
+    .first()
+    .click();
+
+  // await page.waitForTimeout(3000);
+
+  await page.waitForSelector(".two-part-flexrow-style");
+
+  await page.waitForTimeout(2000);
+  //選電話國碼
+  await page
+    .locator(".iti__flag-container .iti__selected-flag")
+    .first()
+    .click();
+
+  await page.waitForSelector(".left-part");
+
+  //輸入 886
+  await page
+    .locator(
+      "#iti-0__country-listbox .iti__country_search_list #iti__country_search"
+    )
+    .first()
+    .fill("886");
+
+  await page.locator("#iti-0__item-tw").first().click();
+
+  await page.locator("input#login_mobile_input").fill("972356167");
+
+  await page.locator("input#login_password").fill("nmbooks4801");
+
+  await page.locator("input#keep_login").check();
+
+  await page.locator("button#login-submit").click();
+});
+
+test("register use mobile phone", async ({ page }) => {
+  await page.goto("https://www.myanlife.com.mm/", { timeout: 10000 });
+
+  // 更改語系
+  await page
+    .locator("header .lang_select .lang_title", {
+      hasText: "English",
+    })
+    .first()
+    .click();
+
+  await page
+    .locator("header .lang_select .lang_list .lang_list_item", {
+      hasText: "繁體中文",
+    })
+    .first()
+    .click();
+
+  //點右上角 登入/註冊
+  await page
+    .locator("header .login_btn", { hasText: "登入/註冊" })
+    .first()
+    .click();
+
+  // await page.waitForTimeout(3000);
+
+  await page.waitForSelector(".two-part-flexrow-style");
+
+  await page.waitForTimeout(2000);
+
+  // 點註冊按鈕
+  await page.locator(".register-btn").click();
+
+  await page.locator("h3.roleName", { hasText: "一般會員" }).click();
+
+  await page.waitForSelector(".register-account-type-form-block");
+
+  await page.waitForTimeout(1000);
+
+  await page.locator(".iti__flag-container .iti__selected-flag").nth(1).click();
+
+  await page
+    .locator(".iti__country_search_list input#iti__country_search")
+    .nth(1)
+    .fill("886");
+
+  await page.locator("li#iti-1__item-tw").click();
+
+  await page
+    .locator("#register_account_type_mobile_input_member")
+    .fill("972356167");
+
+  await page.locator("input#agree_member_register").check();
+
+  await page.waitForSelector("button#register_account_type_sbmit_member");
+
+  await page.waitForTimeout(1000);
+
+  // await page.locator("button#register_account_type_sbmit_member").click();
+
+  // 斷言
+  await expect(
+    page.locator(".validate-hint-container .fail-validate").first()
+  ).toHaveText("用戶已存在。");
+
+  // await page.waitForSelector(".OTP_content .otp_content_area");
+
+  // await page.waitForTimeout(1000);
+
+  // await page.waitForSelector(".OTP-submit-btn");
+
+  // await page.waitForTimeout(1000);
+
+  // await page.getByRole("button", { name: "送出" }).click();
 });
