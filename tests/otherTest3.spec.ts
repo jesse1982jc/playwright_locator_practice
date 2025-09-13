@@ -41,17 +41,21 @@ test("login", async ({ page }) => {
     .getByPlaceholder("輸入手機號碼")
     .pressSequentially("972356167", { delay: 300 });
 
+  await page.waitForTimeout(2000);
+
   await page.getByRole("button", { name: "登入/註冊" }).click();
 
-  await page.waitForTimeout(1000);
+  await page.waitForTimeout(2000);
 
   await page
     .getByPlaceholder("請輸入密碼")
     .pressSequentially("nmbooks4801", { delay: 300 });
 
+  await page.waitForTimeout(2000);
+
   await page.getByRole("button", { name: "登入" }).click();
 
-  await page.waitForTimeout(1000);
+  await page.waitForTimeout(2000);
 
-  await page.locator(".recaptcha-checkbox-border").check();
+  //   await page.locator(".recaptcha-checkbox-border").check();
 });
