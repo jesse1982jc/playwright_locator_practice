@@ -53,6 +53,18 @@ test("login", async ({ page }) => {
 
   await page.waitForTimeout(2000);
 
+  await page
+    .locator(".ChangeInputTypeIcon-sc-1sf4tct", { hasText: "顯示" })
+    .dblclick();
+
+  await page.waitForTimeout(1000);
+
+  await page
+    .locator(".ChangeInputTypeIcon-sc-1sf4tct", { hasText: "顯示" })
+    .click();
+
+  await page.waitForTimeout(2000);
+
   await page.getByRole("button", { name: "登入" }).click();
 
   await page.waitForTimeout(2000);
