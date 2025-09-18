@@ -2,35 +2,35 @@ import { test, expect } from "@playwright/test";
 import { PagerModule } from "ng2-smart-table/lib/components/pager/pager.module";
 import { timeout } from "rxjs-compat/operator/timeout";
 
-// test.beforeEach(async ({ page }) => {
-//   await page.goto("https://www.myanlife.com.mm/", { timeout: 10000 });
-//   const languageBtn = page.locator("header .lang_select").first();
+test.beforeEach(async ({ page }) => {
+  await page.goto("https://www.myanlife.com.mm/", { timeout: 10000 });
+  const languageBtn = page.locator("header .lang_select").first();
 
-//   // 選語系 繁中
-//   await languageBtn.click();
-//   await page
-//     .locator(".lang_list .lang_list_item", { hasText: "繁體中文" })
-//     .first()
-//     .click();
+  // 選語系 繁中
+  await languageBtn.click();
+  await page
+    .locator(".lang_list .lang_list_item", { hasText: "繁體中文" })
+    .first()
+    .click();
 
-//   const loginRegisterBtn = page.locator("header .login_btn").first();
-//   await loginRegisterBtn.click();
+  const loginRegisterBtn = page.locator("header .login_btn").first();
+  await loginRegisterBtn.click();
 
-//   // await page.waitForSelector(".two-part-flexrow-style");
-//   await page.waitForTimeout(1000);
+  // await page.waitForSelector(".two-part-flexrow-style");
+  await page.waitForTimeout(1000);
 
-//   await expect(page.locator(".two-part-flexrow-style").first()).toBeVisible();
+  await expect(page.locator(".two-part-flexrow-style").first()).toBeVisible();
 
-//   const emailLogin = page.locator('.login-form-area [data-logintype="email"]', {
-//     hasText: "信箱",
-//   });
-//   await emailLogin.click();
+  const emailLogin = page.locator('.login-form-area [data-logintype="email"]', {
+    hasText: "信箱",
+  });
+  await emailLogin.click();
 
-//   await page.locator("#login_email").fill("jcjchuhu2@gmail.com");
-//   await page.locator("#login_password").fill("nmbooks4801");
-//   await page.locator("input#keep_login").check();
-//   await page.getByRole("button", { name: "登入" }).click();
-// });
+  await page.locator("#login_email").fill("jcjchuhu2@gmail.com");
+  await page.locator("#login_password").fill("nmbooks4801");
+  await page.locator("input#keep_login").check();
+  await page.getByRole("button", { name: "登入" }).click();
+});
 
 test("login caca taxi", async ({ page }) => {
   await page.goto("https://www.cacataxi.com/", { timeout: 10000 });

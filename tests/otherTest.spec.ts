@@ -5,12 +5,12 @@ test.beforeEach(async ({ page }) => {
   await expect(page.locator("img.custom-logo")).toBeVisible();
 
   // 登入
-  // await page.goto("https://practice.sdetunicorns.com/my-account/");
-  // await page.locator("#username").fill("jcjchuhu2@gmail.com");
-  // await page.locator("#password").fill("abcd1234");
-  // await page.getByRole("checkbox", { name: "Remember me" }).check();
-  // await page.getByRole("button", { name: "Log in" }).click();
-  // await page.locator("#menu-item-489").click();
+  await page.goto("https://practice.sdetunicorns.com/my-account/");
+  await page.locator("#username").fill("jcjchuhu2@gmail.com");
+  await page.locator("#password").fill("abcd1234");
+  await page.getByRole("checkbox", { name: "Remember me" }).check();
+  await page.getByRole("button", { name: "Log in" }).click();
+  await page.locator("#menu-item-489").click();
 });
 test("select option", async ({ page }) => {
   // await page.goto("https://practice.sdetunicorns.com/shop/");
