@@ -145,6 +145,8 @@ test("select option", async ({ page }) => {
     // 更新購物車 數量 及 金額
     await page.locator('td button[name="update_cart"]').click({ force: true });
 
+    await page.waitForTimeout(500);
+
     //單價
     const perPriceText = await row.locator("td.product-price").innerText();
     const perPrice = parseFloat(perPriceText.replace("$", "").trim());
@@ -175,6 +177,11 @@ test("select option", async ({ page }) => {
 
   // 點擊 update cart 更新 subtotal
   // await page.locator('td button[name="update_cart"]').click({ force: true });
+
+  // 確保粗體字 total 金額存在
+  await expect(
+    page.locator('table tbody td[data-title="Total"]')
+  ).toBeVisible();
 
   // 找 cart totals 的 Total
   const totalBoldPriceUpdateText = await page

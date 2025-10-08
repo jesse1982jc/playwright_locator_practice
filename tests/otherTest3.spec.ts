@@ -14,6 +14,10 @@ test.beforeEach(async ({ page }) => {
 
   // await page.locator(".hmOiLo .gaTcAE .eTvER").click({ force: true });
 
+  await page
+    .locator(".sc-lnAgIa gaTcAE .sc-iKGpAt eTvER .sc-gjTGSA eSguy")
+    .click();
+
   await page.waitForTimeout(1000);
 
   await page.locator(".headerA__nav-menu-sub .sub-nav-li").nth(1).hover();
