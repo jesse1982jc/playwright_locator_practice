@@ -44,19 +44,29 @@ test("loop nav Bar", async ({ page }) => {
   await page.goto("https://gimytv.ai/");
 
   const allGimyNavList = page.locator("#example-navbar-collapse ul li");
-  // const liArray = [
-  //   "首頁",
-  //   "電視劇",
-  //   "電影",
-  //   "動漫",
-  //   "綜藝",
-  //   "短劇",
-  //   "排行",
-  //   "成人",
-  // ];
+  const liArray = [
+    "首頁",
+    "電視劇",
+    "電影",
+    "動漫",
+    "綜藝",
+    "短劇",
+    "排行",
+    "成人",
+  ];
+
+  let counter = 0;
 
   for (const li of await allGimyNavList.all()) {
+    console.log(`counter = ${counter}`);
+
     await li.click();
+
+    expect(await li.textContent()).toEqual(liArray[counter]);
+
+    if (counter != 8) {
+      counter++;
+    }
 
     if ((await li.textContent()) == "成人") {
       break;
