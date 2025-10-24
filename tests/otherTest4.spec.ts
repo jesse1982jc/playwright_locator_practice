@@ -22,7 +22,7 @@ test("drop down test", async ({ page }) => {
   await page.locator("select#files").selectOption({ label: "Python" });
 });
 
-test("test", async ({ page }) => {
+test("gimyTV", async ({ page }) => {
   await page.goto("https://gimytv.ai/");
 
   const tvDrama = page.locator("#example-navbar-collapse ul li", {
@@ -38,4 +38,17 @@ test("test", async ({ page }) => {
   await theOutLawOfDoctor.click();
 
   await page.locator("ul#con_playlist_7 li").getByText("第01集").click();
+});
+
+test("loop nav Bar", async ({ page }) => {
+  await page.goto("https://gimytv.ai/");
+
+  const allGimyNavList = page.locator("#example-navbar-collapse ul li");
+
+  for (const li of await allGimyNavList.all()) {
+    await li.click();
+    if ((await li.textContent()) == "成人") {
+      return;
+    }
+  }
 });
