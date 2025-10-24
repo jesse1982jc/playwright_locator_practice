@@ -44,11 +44,22 @@ test("loop nav Bar", async ({ page }) => {
   await page.goto("https://gimytv.ai/");
 
   const allGimyNavList = page.locator("#example-navbar-collapse ul li");
+  // const liArray = [
+  //   "首頁",
+  //   "電視劇",
+  //   "電影",
+  //   "動漫",
+  //   "綜藝",
+  //   "短劇",
+  //   "排行",
+  //   "成人",
+  // ];
 
   for (const li of await allGimyNavList.all()) {
     await li.click();
+
     if ((await li.textContent()) == "成人") {
-      return;
+      break;
     }
   }
 });
