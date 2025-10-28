@@ -73,3 +73,22 @@ test("loop nav Bar", async ({ page }) => {
     }
   }
 });
+
+test("search a drama name", async ({ page }) => {
+  await page.goto("https://gimytv.ai/");
+
+  await page.locator("ul li", { hasText: "電視劇" }).click();
+  await page.locator('ul li [title="台灣"]').click();
+  await page.locator('ul li [title="2025"]').click();
+
+  await page.getByPlaceholder("輸入影片關鍵字...").fill("我們與惡的距離2");
+  await page
+    .locator(
+      'div[class="nav-search visible-md visible-lg"] form[id="formsearch"] button.btn-search'
+    )
+    .click();
+
+  await expect(page.locator("ul li").getByTitle("我們與惡的距離2")).toHaveText(
+    "我們與惡的距離2"
+  );
+});
