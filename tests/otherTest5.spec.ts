@@ -66,3 +66,15 @@ test("checkbox", async ({ page }) => {
     .locator('.form-group .form-check .form-check-input[value="tuesday"]')
     .check();
 });
+
+test("dattepicker", async ({ page }) => {
+  await page.locator("#datepicker").click();
+  await page
+    .locator("table.ui-datepicker-calendar tbody tr")
+    .nth(2)
+    .locator("td", { hasText: "13" })
+    .click();
+
+  //   await page.locator("div.date-picker-box #start-date").click();
+  //   await page.locator("div.date-picker-box #end-date").click();
+});
