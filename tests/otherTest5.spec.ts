@@ -83,3 +83,7 @@ test("dattepicker", async ({ page }) => {
     .getByText("Item 18", { exact: true })
     .click();
 });
+
+test("label", async ({ page }) => {
+  await page.locator("#laptops #apple").click();
+});
