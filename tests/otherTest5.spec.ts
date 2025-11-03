@@ -77,4 +77,9 @@ test("dattepicker", async ({ page }) => {
 
   //   await page.locator("div.date-picker-box #start-date").click();
   //   await page.locator("div.date-picker-box #end-date").click();
+  await page.locator("#comboBox").click();
+  await page
+    .locator("#dropdown .option")
+    .getByText("Item 18", { exact: true })
+    .click();
 });
