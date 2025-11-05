@@ -87,3 +87,11 @@ test("dattepicker", async ({ page }) => {
 test("label", async ({ page }) => {
   await page.locator("#laptops #apple").click();
 });
+
+test("iframe", async ({ page }) => {
+  await page.goto("https://www.globalsqa.com/demo-site/draganddrop/");
+  const frame = page.frameLocator('[rel-title="Photo Manager"] iframe');
+  await frame
+    .locator("ul li h5", { hasText: "High Tatras 3" })
+    .dragTo(frame.locator("#trash"));
+});
