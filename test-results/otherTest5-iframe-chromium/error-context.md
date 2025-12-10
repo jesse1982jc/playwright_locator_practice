@@ -1,0 +1,125 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - button
+  - textbox "Search..."
+  - link "pinterest":
+    - /url: https://in.pinterest.com/globalsqa/
+  - link "twitter":
+    - /url: https://twitter.com/Global_SQA
+  - link "linkedin":
+    - /url: https://www.linkedin.com/company/globalsqa
+  - link "google":
+    - /url: https://plus.google.com/103761557396023531439/posts
+  - link "facebook":
+    - /url: https://facebook.com/globalsqa
+  - text: contact@globalsqa.com
+  - link "GlobalSQA":
+    - /url: https://www.globalsqa.com/
+    - img "GlobalSQA"
+  - list:
+    - listitem:
+      - link "About":
+        - /url: https://www.globalsqa.com/about/
+    - listitem:
+      - link "CheatSheets":
+        - /url: https://www.globalsqa.com/cheatsheets/
+    - listitem:
+      - link "Free Ebooks":
+        - /url: https://www.globalsqa.com/free-ebooks/
+    - listitem:
+      - link "Tester’s Hub":
+        - /url: https://www.globalsqa.com/testers-hub/
+    - listitem:
+      - link "Contact Us":
+        - /url: https://www.globalsqa.com/contact-us/
+- link "Home":
+  - /url: https://www.globalsqa.com/
+- link "Demo Testing Site":
+  - /url: https://www.globalsqa.com/demo-site/
+- link "Drag And Drop":
+  - /url: https://www.globalsqa.com/demo-site/draganddrop/
+- heading "Drag And Drop" [level=1]
+- heading "Interaction" [level=4]
+- list:
+  - listitem:
+    - link "Sortable":
+      - /url: https://www.globalsqa.com/demo-site/sorting/
+  - listitem:
+    - link "Drag And Drop":
+      - /url: https://www.globalsqa.com/demo-site/draganddrop/
+  - listitem:
+    - link "Select Elements":
+      - /url: https://www.globalsqa.com/demo-site/select-elements/
+  - listitem:
+    - link "Draggable Boxes":
+      - /url: https://www.globalsqa.com/demo-site/draggableboxes/
+  - listitem:
+    - link "DropDown Menu":
+      - /url: https://www.globalsqa.com/demo-site/select-dropdown-menu/
+- heading "Widgets" [level=4]
+- list:
+  - listitem:
+    - link "Tooltip":
+      - /url: https://www.globalsqa.com/demo-site/tooltip/
+  - listitem:
+    - link "Sliders":
+      - /url: https://www.globalsqa.com/demo-site/sliders/
+  - listitem:
+    - link "Spinner":
+      - /url: https://www.globalsqa.com/demo-site/spinner/
+  - listitem:
+    - link "DatePicker":
+      - /url: https://www.globalsqa.com/demo-site/datepicker/
+  - listitem:
+    - link "Progress Bar":
+      - /url: https://www.globalsqa.com/demo-site/progress-bar/
+  - listitem:
+    - link "Dialog Boxes":
+      - /url: https://www.globalsqa.com/demo-site/dialog-boxes/
+  - listitem:
+    - link "Auto Complete":
+      - /url: https://www.globalsqa.com/demo-site/auto-complete/
+  - listitem:
+    - link "Accordion And Tabs":
+      - /url: https://www.globalsqa.com/demo-site/accordion-and-tabs/
+- list:
+  - tab "Photo Manager"
+  - tab "Accepted Elements"
+  - tab "Propagation"
+- paragraph:
+  - iframe
+  - insertion
+- heading "Footer Widget Area 1" [level=3]
+- paragraph:
+  - link "Assign a widget to this area now.":
+    - /url: https://www.globalsqa.com/wp-admin/widgets.php
+- heading "Footer Widget Area 2" [level=3]
+- paragraph:
+  - link "Assign a widget to this area now.":
+    - /url: https://www.globalsqa.com/wp-admin/widgets.php
+- heading "Footer Widget Area 3" [level=3]
+- paragraph:
+  - link "Assign a widget to this area now.":
+    - /url: https://www.globalsqa.com/wp-admin/widgets.php
+- heading "Footer Widget Area 4" [level=3]
+- paragraph:
+  - link "Assign a widget to this area now.":
+    - /url: https://www.globalsqa.com/wp-admin/widgets.php
+- link "pinterest":
+  - /url: https://in.pinterest.com/globalsqa/
+- link "twitter":
+  - /url: https://twitter.com/Global_SQA
+- link "linkedin":
+  - /url: https://www.linkedin.com/company/globalsqa
+- link "google":
+  - /url: https://plus.google.com/103761557396023531439/posts
+- link "facebook":
+  - /url: https://facebook.com/globalsqa
+- text: "Website Designed & Developed by :"
+- link "GlobalSQA":
+  - /url: https://www.globalsqa.com
+- insertion:
+  - iframe
+```

@@ -1,0 +1,891 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "Gimy 劇迷":
+    - /url: https://gimytv.ai/
+    - img "Gimy 劇迷"
+  - list:
+    - listitem:
+      - link "Gimy首頁":
+        - /url: https://gimytv.ai/
+        - text: 首頁
+    - listitem:
+      - link "電視劇":
+        - /url: /type/2.html
+    - listitem:
+      - link "電影":
+        - /url: /type/1.html
+    - listitem:
+      - link "動漫":
+        - /url: /type/4.html
+    - listitem:
+      - link "綜藝":
+        - /url: /type/29.html
+    - listitem:
+      - link "短劇":
+        - /url: https://gimypro.com/library/34--hits_week---------.html
+    - listitem:
+      - link "排行榜":
+        - /url: https://gimytv.ai/label/rank.html
+        - text: 排行
+    - listitem:
+      - link "成人":
+        - /url: http://bit.ly/3QBiarU
+    - listitem
+  - textbox "輸入影片關鍵字..."
+  - button
+- link "化外之醫":
+  - /url: "#boxTitle"
+- heading "化外之醫" [level=1]
+- list:
+  - listitem
+  - listitem: 狀態：11集全
+  - listitem:
+    - text: 類別：
+    - link "台劇":
+      - /url: /type/14.html
+  - listitem:
+    - text: 主演：
+    - link "張鈞甯":
+      - /url: /search/-%E5%BC%B5%E9%88%9E%E7%94%AF------------.html
+    - link "連秉發":
+      - /url: /search/-%E9%80%A3%E7%A7%89%E7%99%BC------------.html
+    - link "楊一展":
+      - /url: /search/-%E6%A5%8A%E4%B8%80%E5%B1%95------------.html
+    - link "許安植":
+      - /url: /search/-%E8%A8%B1%E5%AE%89%E6%A4%8D------------.html
+    - link "夏騰宏":
+      - /url: /search/-%E5%A4%8F%E9%A8%B0%E5%AE%8F------------.html
+    - link "蔡亙晏":
+      - /url: /search/-%E8%94%A1%E4%BA%99%E6%99%8F------------.html
+    - link "謝以樂":
+      - /url: /search/-%E8%AC%9D%E4%BB%A5%E6%A8%82------------.html
+    - link "阮秋姮":
+      - /url: /search/-%E9%98%AE%E7%A7%8B%E5%A7%AE------------.html
+    - link "謝章穎":
+      - /url: /search/-%E8%AC%9D%E7%AB%A0%E7%A9%8E------------.html
+  - listitem:
+    - text: 導演：
+    - link "廖士涵":
+      - /url: /search/-----%E5%BB%96%E5%A3%AB%E6%B6%B5--------.html
+  - listitem: 國家/地區：台灣
+  - listitem: 年代：2025
+  - listitem: 更新時間：2025-11-19 22:46
+  - listitem: 人氣：1102328
+- list
+- heading "劇情介紹" [level=3]
+- paragraph: 隱身在臺打黑工的外籍醫師範文寧（連炳發 飾）在一場氣爆意外中，與神經外科女醫師鄭琬平（張鈞甯 飾）攜手救治病患，卻也因此捲入醫療爭議被迫逃亡，面對黑白勢力的進逼，他們從對立到合作，於法律與人性間掙扎，兩個孤獨奮戰的靈魂從此交會……
+- heading "播放線路" [level=3]
+- listitem: 特清線路 ᴴᴰ
+- list:
+  - listitem:
+    - link "1":
+      - /url: /eps/313015-17-1.html
+  - listitem:
+    - link "2":
+      - /url: /eps/313015-17-2.html
+  - listitem:
+    - link "3":
+      - /url: /eps/313015-17-3.html
+  - listitem:
+    - link "4":
+      - /url: /eps/313015-17-4.html
+  - listitem:
+    - link "5":
+      - /url: /eps/313015-17-5.html
+  - listitem:
+    - link "6":
+      - /url: /eps/313015-17-6.html
+  - listitem:
+    - link "7":
+      - /url: /eps/313015-17-7.html
+  - listitem:
+    - link "8":
+      - /url: /eps/313015-17-8.html
+  - listitem:
+    - link "9":
+      - /url: /eps/313015-17-9.html
+  - listitem:
+    - link "10":
+      - /url: /eps/313015-17-10.html
+  - listitem:
+    - link "11":
+      - /url: /eps/313015-17-11.html
+- listitem: 超清線路 ᴴᴰ
+- list:
+  - listitem:
+    - link "第01集":
+      - /url: /eps/313015-18-1.html
+  - listitem:
+    - link "第02集":
+      - /url: /eps/313015-18-2.html
+  - listitem:
+    - link "第03集":
+      - /url: /eps/313015-18-3.html
+  - listitem:
+    - link "第04集":
+      - /url: /eps/313015-18-4.html
+  - listitem:
+    - link "第05集":
+      - /url: /eps/313015-18-5.html
+  - listitem:
+    - link "第06集":
+      - /url: /eps/313015-18-6.html
+  - listitem:
+    - link "第07集":
+      - /url: /eps/313015-18-7.html
+  - listitem:
+    - link "第08集":
+      - /url: /eps/313015-18-8.html
+  - listitem:
+    - link "第09集":
+      - /url: /eps/313015-18-9.html
+  - listitem:
+    - link "第10集":
+      - /url: /eps/313015-18-10.html
+  - listitem:
+    - link "第11集":
+      - /url: /eps/313015-18-11.html
+- listitem: 高清線路 ᴴᴰ
+- list:
+  - listitem:
+    - link "第01集":
+      - /url: /eps/313015-6-1.html
+  - listitem:
+    - link "第02集":
+      - /url: /eps/313015-6-2.html
+  - listitem:
+    - link "第03集":
+      - /url: /eps/313015-6-3.html
+  - listitem:
+    - link "第04集":
+      - /url: /eps/313015-6-4.html
+  - listitem:
+    - link "第05集":
+      - /url: /eps/313015-6-5.html
+  - listitem:
+    - link "第06集":
+      - /url: /eps/313015-6-6.html
+  - listitem:
+    - link "第07集":
+      - /url: /eps/313015-6-7.html
+  - listitem:
+    - link "第08集":
+      - /url: /eps/313015-6-8.html
+  - listitem:
+    - link "第09集":
+      - /url: /eps/313015-6-9.html
+  - listitem:
+    - link "第10集":
+      - /url: /eps/313015-6-10.html
+  - listitem:
+    - link "第11集":
+      - /url: /eps/313015-6-11.html
+- listitem: 魔清雲
+- list:
+  - listitem:
+    - link "第01集":
+      - /url: /eps/313015-4-1.html
+  - listitem:
+    - link "第02集":
+      - /url: /eps/313015-4-2.html
+  - listitem:
+    - link "第03集":
+      - /url: /eps/313015-4-3.html
+  - listitem:
+    - link "第04集":
+      - /url: /eps/313015-4-4.html
+  - listitem:
+    - link "第05集":
+      - /url: /eps/313015-4-5.html
+  - listitem:
+    - link "第06集":
+      - /url: /eps/313015-4-6.html
+  - listitem:
+    - link "第07集":
+      - /url: /eps/313015-4-7.html
+  - listitem:
+    - link "第08集":
+      - /url: /eps/313015-4-8.html
+  - listitem:
+    - link "第09集":
+      - /url: /eps/313015-4-9.html
+  - listitem:
+    - link "第10集":
+      - /url: /eps/313015-4-10.html
+  - listitem:
+    - link "第11集":
+      - /url: /eps/313015-4-11.html
+- listitem: 暴風雲
+- list:
+  - listitem:
+    - link "第01集":
+      - /url: /eps/313015-2-1.html
+  - listitem:
+    - link "第02集":
+      - /url: /eps/313015-2-2.html
+  - listitem:
+    - link "第03集":
+      - /url: /eps/313015-2-3.html
+  - listitem:
+    - link "第04集":
+      - /url: /eps/313015-2-4.html
+  - listitem:
+    - link "第05集":
+      - /url: /eps/313015-2-5.html
+  - listitem:
+    - link "第06集":
+      - /url: /eps/313015-2-6.html
+  - listitem:
+    - link "第07集":
+      - /url: /eps/313015-2-7.html
+  - listitem:
+    - link "第08集":
+      - /url: /eps/313015-2-8.html
+  - listitem:
+    - link "第09集":
+      - /url: /eps/313015-2-9.html
+  - listitem:
+    - link "第10集":
+      - /url: /eps/313015-2-10.html
+  - listitem:
+    - link "第11集":
+      - /url: /eps/313015-2-11.html
+- listitem: 無盡雲
+- list:
+  - listitem:
+    - link "第01集":
+      - /url: /eps/313015-11-1.html
+  - listitem:
+    - link "第02集":
+      - /url: /eps/313015-11-2.html
+  - listitem:
+    - link "第03集":
+      - /url: /eps/313015-11-3.html
+  - listitem:
+    - link "第04集":
+      - /url: /eps/313015-11-4.html
+  - listitem:
+    - link "第05集":
+      - /url: /eps/313015-11-5.html
+  - listitem:
+    - link "第06集":
+      - /url: /eps/313015-11-6.html
+  - listitem:
+    - link "第07集":
+      - /url: /eps/313015-11-7.html
+  - listitem:
+    - link "第08集":
+      - /url: /eps/313015-11-8.html
+  - listitem:
+    - link "第09集":
+      - /url: /eps/313015-11-9.html
+  - listitem:
+    - link "第10集":
+      - /url: /eps/313015-11-10.html
+  - listitem:
+    - link "第11集":
+      - /url: /eps/313015-11-11.html
+- listitem: 優質雲
+- list:
+  - listitem:
+    - link "第01集":
+      - /url: /eps/313015-13-1.html
+  - listitem:
+    - link "第02集":
+      - /url: /eps/313015-13-2.html
+  - listitem:
+    - link "第03集":
+      - /url: /eps/313015-13-3.html
+  - listitem:
+    - link "第04集":
+      - /url: /eps/313015-13-4.html
+  - listitem:
+    - link "第05集":
+      - /url: /eps/313015-13-5.html
+  - listitem:
+    - link "第06集":
+      - /url: /eps/313015-13-6.html
+  - listitem:
+    - link "第07集":
+      - /url: /eps/313015-13-7.html
+  - listitem:
+    - link "第08集":
+      - /url: /eps/313015-13-8.html
+  - listitem:
+    - link "第09集":
+      - /url: /eps/313015-13-9.html
+  - listitem:
+    - link "第10集":
+      - /url: /eps/313015-13-10.html
+  - listitem:
+    - link "第11集":
+      - /url: /eps/313015-13-11.html
+- listitem: 順暢雲
+- list:
+  - listitem:
+    - link "第01集":
+      - /url: /eps/313015-14-1.html
+  - listitem:
+    - link "第02集":
+      - /url: /eps/313015-14-2.html
+  - listitem:
+    - link "第03集":
+      - /url: /eps/313015-14-3.html
+  - listitem:
+    - link "第04集":
+      - /url: /eps/313015-14-4.html
+  - listitem:
+    - link "第05集":
+      - /url: /eps/313015-14-5.html
+  - listitem:
+    - link "第06集":
+      - /url: /eps/313015-14-6.html
+  - listitem:
+    - link "第07集":
+      - /url: /eps/313015-14-7.html
+  - listitem:
+    - link "第08集":
+      - /url: /eps/313015-14-8.html
+  - listitem:
+    - link "第09集":
+      - /url: /eps/313015-14-9.html
+  - listitem:
+    - link "第10集":
+      - /url: /eps/313015-14-10.html
+  - listitem:
+    - link "第11集":
+      - /url: /eps/313015-14-11.html
+- listitem: 最大雲
+- list:
+  - listitem:
+    - link "第01集":
+      - /url: /eps/313015-15-1.html
+  - listitem:
+    - link "第02集":
+      - /url: /eps/313015-15-2.html
+  - listitem:
+    - link "第03集":
+      - /url: /eps/313015-15-3.html
+  - listitem:
+    - link "第04集":
+      - /url: /eps/313015-15-4.html
+  - listitem:
+    - link "第05集":
+      - /url: /eps/313015-15-5.html
+  - listitem:
+    - link "第06集":
+      - /url: /eps/313015-15-6.html
+  - listitem:
+    - link "第07集":
+      - /url: /eps/313015-15-7.html
+  - listitem:
+    - link "第08集":
+      - /url: /eps/313015-15-8.html
+  - listitem:
+    - link "第09集":
+      - /url: /eps/313015-15-9.html
+  - listitem:
+    - link "第10集":
+      - /url: /eps/313015-15-10.html
+  - listitem:
+    - link "第11集":
+      - /url: /eps/313015-15-11.html
+- listitem: 非凡雲
+- list:
+  - listitem:
+    - link "第01集":
+      - /url: /eps/313015-16-1.html
+  - listitem:
+    - link "第02集":
+      - /url: /eps/313015-16-2.html
+  - listitem:
+    - link "第03集":
+      - /url: /eps/313015-16-3.html
+  - listitem:
+    - link "第04集":
+      - /url: /eps/313015-16-4.html
+  - listitem:
+    - link "第05集":
+      - /url: /eps/313015-16-5.html
+  - listitem:
+    - link "第06集":
+      - /url: /eps/313015-16-6.html
+  - listitem:
+    - link "第07集":
+      - /url: /eps/313015-16-7.html
+  - listitem:
+    - link "第08集":
+      - /url: /eps/313015-16-8.html
+  - listitem:
+    - link "第09集":
+      - /url: /eps/313015-16-9.html
+  - listitem:
+    - link "第10集":
+      - /url: /eps/313015-16-10.html
+  - listitem:
+    - link "第11集":
+      - /url: /eps/313015-16-11.html
+- listitem: 新浪雲
+- list:
+  - listitem:
+    - link "第1集":
+      - /url: /eps/313015-3-1.html
+  - listitem:
+    - link "第2集":
+      - /url: /eps/313015-3-2.html
+  - listitem:
+    - link "第3集":
+      - /url: /eps/313015-3-3.html
+  - listitem:
+    - link "第4集":
+      - /url: /eps/313015-3-4.html
+  - listitem:
+    - link "第5集":
+      - /url: /eps/313015-3-5.html
+  - listitem:
+    - link "第6集":
+      - /url: /eps/313015-3-6.html
+  - listitem:
+    - link "第7集":
+      - /url: /eps/313015-3-7.html
+  - listitem:
+    - link "第8集":
+      - /url: /eps/313015-3-8.html
+  - listitem:
+    - link "第9集":
+      - /url: /eps/313015-3-9.html
+  - listitem:
+    - link "第10集":
+      - /url: /eps/313015-3-10.html
+  - listitem:
+    - link "第11集完結":
+      - /url: /eps/313015-3-11.html
+- listitem: 速播雲
+- list:
+  - listitem:
+    - link "第1集":
+      - /url: /eps/313015-12-1.html
+  - listitem:
+    - link "第2集":
+      - /url: /eps/313015-12-2.html
+  - listitem:
+    - link "第3集":
+      - /url: /eps/313015-12-3.html
+  - listitem:
+    - link "第4集":
+      - /url: /eps/313015-12-4.html
+  - listitem:
+    - link "第5集":
+      - /url: /eps/313015-12-5.html
+  - listitem:
+    - link "第6集":
+      - /url: /eps/313015-12-6.html
+  - listitem:
+    - link "第7集":
+      - /url: /eps/313015-12-7.html
+  - listitem:
+    - link "第8集":
+      - /url: /eps/313015-12-8.html
+  - listitem:
+    - link "第9集":
+      - /url: /eps/313015-12-9.html
+  - listitem:
+    - link "第10集":
+      - /url: /eps/313015-12-10.html
+  - listitem:
+    - link "第11集完結":
+      - /url: /eps/313015-12-11.html
+- listitem: 極速雲
+- list:
+  - listitem:
+    - link "第1集":
+      - /url: /eps/313015-5-1.html
+  - listitem:
+    - link "第2集":
+      - /url: /eps/313015-5-2.html
+  - listitem:
+    - link "第3集":
+      - /url: /eps/313015-5-3.html
+  - listitem:
+    - link "第4集":
+      - /url: /eps/313015-5-4.html
+  - listitem:
+    - link "第5集":
+      - /url: /eps/313015-5-5.html
+  - listitem:
+    - link "第6集":
+      - /url: /eps/313015-5-6.html
+  - listitem:
+    - link "第7集":
+      - /url: /eps/313015-5-7.html
+  - listitem:
+    - link "第8集":
+      - /url: /eps/313015-5-8.html
+  - listitem:
+    - link "第9集":
+      - /url: /eps/313015-5-9.html
+  - listitem:
+    - link "第10集":
+      - /url: /eps/313015-5-10.html
+  - listitem:
+    - link "第11集完結":
+      - /url: /eps/313015-5-11.html
+- heading "熱播台劇" [level=3]
+- list:
+  - listitem:
+    - link "全07集":
+      - /url: /vod/244738.html
+    - heading "中元大餐" [level=5]:
+      - link "中元大餐":
+        - /url: /vod/244738.html
+    - text: 藍正龍,夏靖庭,阮柏皓,林奕嵐,黃冠智
+  - listitem:
+    - link "06集全":
+      - /url: /vod/35337.html
+    - heading "彼岸之嫁" [level=5]:
+      - link "彼岸之嫁":
+        - /url: /vod/35337.html
+    - text: 黃姵嘉,吳慷仁,林路迪,田士廣
+  - listitem:
+    - link "02集全":
+      - /url: /vod/239114.html
+    - heading "模仿犯" [level=5]:
+      - link "模仿犯":
+        - /url: /vod/239114.html
+    - text: 吳慷仁,柯佳嬿,庹宗華,林心如,姚淳耀,范少勳,江宜蓉,夏騰宏
+  - listitem:
+    - link "已完結":
+      - /url: /vod/157451.html
+    - heading "俗女養成記2" [level=5]:
+      - link "俗女養成記2":
+        - /url: /vod/157451.html
+    - text: 謝盈萱,吳以涵,天心,夏靖庭,楊麗音,陳竹昇,於子育,藍葦華,陳家逵,楊銘威,宋偉恩,李國毅,朱宥丞,闕銘佑,溫升豪,朱芷瑩,施名帥,金美滿,林芷薰,趙自強,楊宸宥,王宥謙
+  - listitem:
+    - link "番外集全":
+      - /url: /vod/122379.html
+    - heading "第二名的逆襲" [level=5]:
+      - link "第二名的逆襲":
+        - /url: /vod/122379.html
+    - text: 林子閎,楊宇騰,張睿家,石知田,李齊,羅德弘,范姜彥豐,辛樂兒
+  - listitem:
+    - link "更新至第45集":
+      - /url: /vod/211217.html
+    - heading "門當互懟愛上你" [level=5]:
+      - link "門當互懟愛上你":
+        - /url: /vod/211217.html
+    - text: 林艾璇,連晨翔,楊子儀,檢場,謝瓊煖,樊光耀,況明潔
+  - listitem:
+    - link "HD中字":
+      - /url: /vod/159763.html
+    - heading "無邪" [level=5]:
+      - link "無邪":
+        - /url: /vod/159763.html
+    - text: 張得中,蟻大點
+  - listitem:
+    - link "12集全":
+      - /url: /vod/249623.html
+    - heading "美食無間" [level=5]:
+      - link "美食無間":
+        - /url: /vod/249623.html
+    - text: 傅孟柏,王柏傑,簡嫚書
+  - listitem:
+    - link "更新至150集":
+      - /url: /vod/231192.html
+    - heading "加油喜事" [level=5]:
+      - link "加油喜事":
+        - /url: /vod/231192.html
+    - text: 周曉涵,王彩樺,陳亞蘭,馬國賢,李興文,鄒承恩,洪都拉斯
+  - listitem:
+    - link "25集全":
+      - /url: /vod/141594.html
+    - heading "惡作劇之吻" [level=5]:
+      - link "惡作劇之吻":
+        - /url: /vod/141594.html
+    - text: 鄭元暢,林依晨,趙詠華,唐從聖
+  - listitem:
+    - link "完結":
+      - /url: /vod/122906.html
+    - heading "HIStory4-近距離愛上你" [level=5]:
+      - link "HIStory4-近距離愛上你":
+        - /url: /vod/122906.html
+    - text: 塗善存,陳立安,安俊朋,林嘉威
+  - listitem:
+    - link "全08集":
+      - /url: /vod/254746.html
+    - heading "愛愛內含光" [level=5]:
+      - link "愛愛內含光":
+        - /url: /vod/254746.html
+    - text: 詹子萱,柯震東,林哲熹,巫建和,夏于喬,馬志翔,苗可麗,洪都拉斯,鳳小嶽,禾浩辰
+  - listitem:
+    - link "08集全":
+      - /url: /vod/257821.html
+    - heading "不夠善良的我們" [level=5]:
+      - link "不夠善良的我們":
+        - /url: /vod/257821.html
+    - text: 林依晨,許瑋甯,賀軍翔,柯震東,路斯明
+  - listitem:
+    - link "已完結":
+      - /url: /vod/205086.html
+    - heading "媽，別鬧了！" [level=5]:
+      - link "媽，別鬧了！":
+        - /url: /vod/205086.html
+    - text: 比莉,賈靜雯,柯佳嬿,寇世勳,吳慷仁,林柏宏,曾莞婷
+  - listitem:
+    - link "11集全":
+      - /url: /vod/212770.html
+    - heading "台北女子圖鑑" [level=5]:
+      - link "台北女子圖鑑":
+        - /url: /vod/212770.html
+    - text: 桂綸鎂,王柏傑,夏于喬,林思宇,楊謹華,天心,陸明君,李霈瑜,曾愷玹,姚以緹,連俞涵,張景嵐,張孝全,石錦航,鳳小嶽,林柏宏,巫建和,禾浩辰,宋柏緯,范少勳,周厚安
+- text:  
+- heading "熱門推薦" [level=3]
+- list:
+  - listitem:
+    - link "更新至32集":
+      - /url: /vod/413904.html
+    - heading "大生意人" [level=5]:
+      - link "大生意人":
+        - /url: /vod/413904.html
+    - text: 陳曉,孫千,羅一舟,成泰燊,黃志忠,李純,朱亞文,向涵之,吳樾,朱茵,梁冠華,王子璇,楊子驊,柯藍,王永泉,劉佩琦,王雨,王建國,林夏薇,宋寧峯,令卓,欒元暉,扈天翼,唐鑑軍,程楓,徐僧,韓云云,王俊彭,黃超
+  - listitem:
+    - link "更新至24集":
+      - /url: /vod/414140.html
+    - heading "亦舞之城" [level=5]:
+      - link "亦舞之城":
+        - /url: /vod/414140.html
+    - text: 鍾漢良,秦嵐,白冰,王冠逸,王真兒,王一舟,張雲琪,李嘉灝,陳瑾,張太文
+  - listitem:
+    - link "32集全":
+      - /url: /vod/413546.html
+    - heading "梟起青壤" [level=5]:
+      - link "梟起青壤":
+        - /url: /vod/413546.html
+    - text: 迪麗熱巴,陳星旭,張儷,董暢,張亦馳,蘇鑫,顏卓靈,田小潔,梁頌晴,趙昕,潘美燁,陳百川,張銘恩,林鵬,師悅玲
+  - listitem:
+    - link "更新至14集":
+      - /url: /vod/414921.html
+    - heading "狙擊蝴蝶" [level=5]:
+      - link "狙擊蝴蝶":
+        - /url: /vod/414921.html
+    - text: 陳妍希,周柯宇,劉芮麟,陳小紜,謝興陽
+  - listitem:
+    - link "更新第06集":
+      - /url: /vod/413390.html
+    - heading "模範計程車3" [level=5]:
+      - link "模範計程車3":
+        - /url: /vod/413390.html
+    - text: 李帝勳,表藝珍,金義城,張赫鎮,裴侑藍,笠松將
+  - listitem:
+    - link "螢火單元":
+      - /url: /vod/414399.html
+    - heading "即刻上場" [level=5]:
+      - link "即刻上場":
+        - /url: /vod/414399.html
+    - text: 胡先煦,周依然,何藍逗,加奈那,李樂,黃婷婷,王鏘,劉海寬,柳巖,袁文康,孫淳,楊玏,張晞臨,黃聖池
+  - listitem:
+    - link "已完結·全12集":
+      - /url: /vod/408789.html
+    - heading "親愛的X" [level=5]:
+      - link "親愛的X":
+        - /url: /vod/408789.html
+    - text: 金裕貞,金永大,金道勳,黃寅燁,李烈音,洪宗玄,金志勳,金有美,金智英,洪妃羅,金伊敬,玄瑞河
+  - listitem:
+    - link "全35集":
+      - /url: /vod/412581.html
+    - heading "鳳凰台上" [level=5]:
+      - link "鳳凰台上":
+        - /url: /vod/412581.html
+    - text: 任嘉倫,彭小苒,張耀,陳意涵,汪卓成,鶴男,劉夢芮,駱明劼,林靜,薛亦倫,衛然,李康,王奕珵,宋文作,高曙光,傅方俊,趙柯,舒耀瑄,李彧
+  - listitem:
+    - link "更新至22集":
+      - /url: /vod/414466.html
+    - heading "天書黎明" [level=5]:
+      - link "天書黎明":
+        - /url: /vod/414466.html
+    - text: 李宏毅,蘇曉彤,餘承恩,王子璇,於翔,彭雅琦,宋家騰,戴燕妮,金珈,錢波,高冬平
+  - listitem:
+    - link "已完結·全12集":
+      - /url: /vod/415388.html
+    - heading "認罪之罪" [level=5]:
+      - link "認罪之罪":
+        - /url: /vod/415388.html
+    - text: 全度妍,金高銀,樸海秀,陳善圭,崔英俊,南多凜
+  - listitem:
+    - link "更新至118集":
+      - /url: /vod/245516.html
+    - heading "仙逆" [level=5]:
+      - link "仙逆":
+        - /url: /vod/245516.html
+    - text: 史澤鯤,常文濤,林強,周湘寧
+  - listitem:
+    - link "40集全":
+      - /url: /vod/409151.html
+    - heading "唐朝詭事錄之長安" [level=5]:
+      - link "唐朝詭事錄之長安":
+        - /url: /vod/409151.html
+    - text: 楊旭文,楊志剛,郜思雯,陳創,孫雪寧,石悅安鑫
+  - listitem:
+    - link "第172集":
+      - /url: /vod/68033.html
+    - heading "凡人修仙傳" [level=5]:
+      - link "凡人修仙傳":
+        - /url: /vod/68033.html
+    - text: 錢文青,楊天翔,楊默,歪歪,谷江山,喬詩語
+  - listitem:
+    - link "已完結·全12集":
+      - /url: /vod/408522.html
+    - heading "操控遊戲" [level=5]:
+      - link "操控遊戲":
+        - /url: /vod/408522.html
+    - text: 池昌旭,都敬秀,李光洙,趙允秀,楊東根,表藝珍
+  - listitem:
+    - link "更新至60集":
+      - /url: /vod/303485.html
+    - heading "牧神記" [level=5]:
+      - link "牧神記":
+        - /url: /vod/303485.html
+    - text: 張若瑜,李欣,程玉珠,杜晴晴,虞曉旭,於凱隆,高嗣航,張恆,王宇航,劉宇軒,唐昊
+- text:  
+- heading "台劇排行榜" [level=3]
+- link "已完結·全14集 1":
+  - /url: /vod/403392.html
+- strong: 人浮於愛
+- text: 楊祐寧,邵雨薇,範少勳,宋芸樺,簡嫚書 已完結·全14集
+- list:
+  - listitem:
+    - link "2監所男子囚生記":
+      - /url: /vod/412809.html
+      - emphasis: "2"
+      - text: 監所男子囚生記
+  - listitem:
+    - link "3如果我不曾見過太陽":
+      - /url: /vod/412487.html
+      - emphasis: "3"
+      - text: 如果我不曾見過太陽
+  - listitem:
+    - link "4舊金山美容院":
+      - /url: /vod/402661.html
+      - emphasis: "4"
+      - text: 舊金山美容院
+  - listitem:
+    - link "5回魂計":
+      - /url: /vod/399513.html
+      - emphasis: "5"
+      - text: 回魂計
+  - listitem:
+    - link "6黑盒子":
+      - /url: /vod/404148.html
+      - emphasis: "6"
+      - text: 黑盒子
+  - listitem:
+    - link "7看看你有多愛我":
+      - /url: /vod/404380.html
+      - emphasis: "7"
+      - text: 看看你有多愛我
+  - listitem:
+    - link "8黑白原來是真的":
+      - /url: /vod/403635.html
+      - emphasis: "8"
+      - text: 黑白原來是真的
+  - listitem:
+    - link "9垂涎":
+      - /url: /vod/338488.html
+      - emphasis: "9"
+      - text: 垂涎
+  - listitem:
+    - link "10我們與惡的距離2":
+      - /url: /vod/318684.html
+      - emphasis: "10"
+      - text: 我們與惡的距離2
+  - listitem:
+    - link "11化外之醫":
+      - /url: /vod/313015.html
+      - emphasis: "11"
+      - text: 化外之醫
+  - listitem:
+    - link "12不良執念清除師":
+      - /url: /vod/239752.html
+      - emphasis: "12"
+      - text: 不良執念清除師
+  - listitem:
+    - link "13台灣犯罪故事":
+      - /url: /vod/232413.html
+      - emphasis: "13"
+      - text: 台灣犯罪故事
+  - listitem:
+    - link "14影后":
+      - /url: /vod/304209.html
+      - emphasis: "14"
+      - text: 影后
+  - listitem:
+    - link "15拜六禮拜":
+      - /url: /vod/318793.html
+      - emphasis: "15"
+      - text: 拜六禮拜
+  - listitem:
+    - link "16包青天":
+      - /url: /vod/160253.html
+      - emphasis: "16"
+      - text: 包青天
+  - listitem:
+    - link "17逆局":
+      - /url: /vod/158441.html
+      - emphasis: "17"
+      - text: 逆局
+  - listitem:
+    - link "18我們六個":
+      - /url: /vod/344037.html
+      - emphasis: "18"
+      - text: 我們六個
+  - listitem:
+    - link "19就算一個人也可以好好的吃飯2":
+      - /url: /vod/412291.html
+      - emphasis: "19"
+      - text: 就算一個人也可以好好的吃飯2
+  - listitem:
+    - link "20零日攻擊":
+      - /url: /vod/345957.html
+      - emphasis: "20"
+      - text: 零日攻擊
+  - listitem:
+    - link "21都市懼集":
+      - /url: /vod/296667.html
+      - emphasis: "21"
+      - text: 都市懼集
+  - listitem:
+    - link "22百味人生":
+      - /url: /vod/345526.html
+      - emphasis: "22"
+      - text: 百味人生
+  - listitem:
+    - link "23阿叔":
+      - /url: /vod/246869.html
+      - emphasis: "23"
+      - text: 阿叔
+  - listitem:
+    - link "24阿榮與阿玉":
+      - /url: /vod/304032.html
+      - emphasis: "24"
+      - text: 阿榮與阿玉
+  - listitem:
+    - link "25想見你":
+      - /url: /vod/34689.html
+      - emphasis: "25"
+      - text: 想見你
+- paragraph:
+  - link "公告站":
+    - /url: https://gimy.news
+  - text: "|"
+  - link "聯絡我們":
+    - /url: /gbook/
+  - text: "|"
+  - link "報錯":
+    - /url: /gbook/
+  - link "Gimy 劇迷官方網站（gimytv.ai）- 智能追劇首選":
+    - /url: https://giv.amyti/?v=1
+- paragraph
+- list:
+  - listitem
+```

@@ -1,0 +1,450 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - link "12/8-12/11 限時四天加碼!! 全館滿$6000 加贈固齒康漱口水 (市價$880) ":
+    - /url: //www.taitiansenyi.com/page/004
+  - link "明山玫伊.com":
+    - /url: //www.taitiansenyi.com/
+    - img "明山玫伊.com"
+  - navigation:
+    - list:
+      - listitem: 
+      - listitem: 
+      - listitem:
+        - link " 0":
+          - /url: //www.taitiansenyi.com/V2/ShoppingCart/Index?shopId=41795
+    - list:
+      - listitem: 商品分類 
+      - listitem: 最新優惠 
+      - listitem:
+        - link "熱銷排行榜":
+          - /url: //www.taitiansenyi.com/Shop/HotSaleRanking/41795?period=Weekly
+      - listitem: 專家推薦 
+      - listitem: 品牌總覽 
+      - listitem: 會員好康 
+      - listitem: 主題專欄 
+    - searchbox "搜尋商品"
+    - text: 
+  - text: 
+  - link:
+    - /url: //www.taitiansenyi.com/page/004
+    - figure:
+      - img "HeaderA-carousel-2"
+  - text: 
+  - list:
+    - listitem:
+      - button "• 1"
+    - listitem:
+      - button "• 2"
+    - listitem:
+      - button "• 3"
+    - listitem:
+      - button "• 4"
+  - link "":
+    - /url: https://line.me/R/ti/p/@839sfhdh
+  - link "":
+    - /url: https://www.facebook.com/NewLife150
+  - img
+  - text: 
+- link "QuickEntryA-1":
+  - /url: https://www.taitiansenyi.com/page/004
+  - img "QuickEntryA-1"
+- link "QuickEntryA-2":
+  - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/578960
+  - img "QuickEntryA-2"
+- link "QuickEntryA-3":
+  - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/578961
+  - img "QuickEntryA-3"
+- link "QuickEntryA-4":
+  - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/578384
+  - img "QuickEntryA-4"
+- link "QuickEntryA-5":
+  - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/578380
+  - img "QuickEntryA-5"
+- link "QuickEntryA-6":
+  - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/578430
+  - img "QuickEntryA-6"
+- link "QuickEntryA-7":
+  - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/578432
+  - img "QuickEntryA-7"
+- link "QuickEntryA-8":
+  - /url: //www.taitiansenyi.com/v2/ECoupon/List
+  - img "QuickEntryA-8"
+- link "QuickEntryA-9":
+  - /url: //www.taitiansenyi.com/page/3311
+  - img "QuickEntryA-9"
+- link "QuickEntryA-10":
+  - /url: //www.taitiansenyi.com/V2/GameModule/41795/gpc001/GC2025112500600
+  - img "QuickEntryA-10"
+- text: 活動攻略 12%回饋 年度囤貨 蝦殺接力 超值加購 搭劵66折 買3送1 購物神劵 會員好康 領$112
+- list:
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/578960
+      - figure:
+        - img "BannerA-1"
+- list:
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/578961
+      - figure:
+        - img "BannerA-1"
+- list:
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/578384
+      - figure:
+        - img "BannerA-1"
+- list:
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/578380
+      - figure:
+        - img "BannerA-1"
+- list:
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/v2/PromotionEngine/Detail/518100
+      - figure:
+        - img "BannerA-1"
+- text: 
+- link "買就回饋12%紅利點數 2025/12/08 ~ 2025/12/22 買就回饋12%紅利點數 買就回饋12%紅利點數":
+  - /url: //www.taitiansenyi.com/v2/PromotionEngine/Detail/521524
+  - text: 買就回饋12%紅利點數 2025/12/08 ~ 2025/12/22
+  - img "買就回饋12%紅利點數"
+  - img "買就回饋12%紅利點數"
+- link "消費滿$6000 贈固齒康 2025/12/08 ~ 2025/12/11 消費滿$6000 贈固齒康":
+  - /url: //www.taitiansenyi.com/v2/PromotionEngine/Detail/521189
+  - text: 消費滿$6000 贈固齒康 2025/12/08 ~ 2025/12/11
+  - img "消費滿$6000 贈固齒康"
+- text: 
+- link "查看活動列表 ":
+  - /url: //www.taitiansenyi.com/v2/Promotion/List
+- list:
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/532465
+      - figure:
+        - img "BannerA-1"
+- link:
+  - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/558428
+  - figure:
+    - img "BannerD-carousel-1"
+- text: 
+- link:
+  - /url: "javascript: void(0)"
+  - figure:
+    - img "BannerD-carousel-2"
+- text: 
+- list:
+  - listitem:
+    - button "• 1"
+  - listitem:
+    - button "• 2"
+  - listitem:
+    - button "• 3"
+  - listitem:
+    - button "• 4"
+- text: 
+- link "QuickEntryA-1":
+  - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/532466
+  - img "QuickEntryA-1"
+- link "QuickEntryA-2":
+  - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/532467
+  - img "QuickEntryA-2"
+- link "QuickEntryA-3":
+  - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/532471
+  - img "QuickEntryA-3"
+- link "QuickEntryA-4":
+  - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/532470
+  - img "QuickEntryA-4"
+- link "QuickEntryA-5":
+  - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/532490
+  - img "QuickEntryA-5"
+- link "QuickEntryA-6":
+  - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/532479
+  - img "QuickEntryA-6"
+- link "QuickEntryA-7":
+  - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/532476
+  - img "QuickEntryA-7"
+- link "QuickEntryA-8":
+  - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/532477
+  - img "QuickEntryA-8"
+- link "QuickEntryA-9":
+  - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/532478
+  - img "QuickEntryA-9"
+- link "QuickEntryA-10":
+  - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/532480
+  - img "QuickEntryA-10"
+- text: 臉部保養 身體保養 天然精油 抗菌系列 素食專區 關鍵保健 機能保健 纖體保健 美顏/調理 順暢保健 
+- iframe
+- list:
+  - listitem:
+    - link:
+      - /url: "javascript: void(0)"
+      - figure:
+        - img "專家認證"
+- list:
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/V2/Brand/Mei
+      - figure:
+        - img "玫伊最愛"
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/V2/Brand/Ming
+      - figure:
+        - img "山山最愛"
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/V2/Brand/DietitianYang
+      - figure:
+        - img "營養師"
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/V2/Brand/DrChao
+      - figure:
+        - img "皮膚科醫師推薦"
+- list:
+  - listitem:
+    - link:
+      - /url: "javascript: void(0)"
+      - figure:
+        - img "專屬推薦"
+- text: ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+- link:
+  - /url: https://tw.91app.com/act/251201_jkopay/index.html
+  - figure:
+    - img "BannerD-carousel-2"
+- text: 
+- list:
+  - listitem:
+    - button "• 1"
+  - listitem:
+    - button "• 2"
+  - listitem:
+    - button "• 3"
+  - listitem:
+    - button "• 4"
+  - listitem:
+    - button "• 5"
+- list:
+  - listitem:
+    - link:
+      - /url: "javascript: void(0)"
+      - figure:
+        - img "品牌總覽"
+- list:
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/V2/Brand/newlife
+      - figure:
+        - img "NEWLIFE"
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/V2/Brand/taitiansenyi
+      - figure:
+        - img "太田森一"
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/V2/Brand/seino-specialist
+      - figure:
+        - img "清野專科"
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/V2/Brand/LANOX
+      - figure:
+        - img "LANOX"
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/V2/Brand/jetaime
+      - figure:
+        - img "Jetaime"
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/V2/Brand/Goddess
+      - figure:
+        - img "女神心計"
+- list:
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/544840
+      - figure:
+        - img "季節保健"
+- list:
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/532476
+      - figure:
+        - img "機能保健"
+- list:
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/532479
+      - figure:
+        - img "關鍵保養"
+- list:
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/532477
+      - figure:
+        - img "纖體保健"
+- list:
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/532478
+      - figure:
+        - img "美妍商品"
+- list:
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/532466
+      - figure:
+        - img "BannerA-1"
+- list:
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/532467
+      - figure:
+        - img "身體保養"
+- list:
+  - listitem:
+    - link:
+      - /url: //www.taitiansenyi.com/v2/official/SalePageCategory/532471
+      - figure:
+        - img "天然精油"
+- list:
+  - listitem:
+    - link:
+      - /url: "javascript: void(0)"
+      - figure:
+        - img "BannerA-1"
+- article:
+  - article:
+    - link:
+      - /url: https://www.taitiansenyi.com/page/052
+      - figure:
+        - img "BlogA-1"
+    - link "蔓越莓不能和什麼一起吃？什麼時候吃最好？蔓越莓3大禁忌全解析 蔓越莓含草酸成分，不能與抗凝血藥物或高鈣食物同時攝取，以免增加出血風險或引發腎結石問題，而腸胃敏感者建議餐後食用。本文統整蔓越莓3大禁忌，與適合補充蔓越莓7大族群，讓你一次掌握。 去看看":
+      - /url: https://www.taitiansenyi.com/page/052
+      - text: 蔓越莓不能和什麼一起吃？什麼時候吃最好？蔓越莓3大禁忌全解析
+      - paragraph: 蔓越莓含草酸成分，不能與抗凝血藥物或高鈣食物同時攝取，以免增加出血風險或引發腎結石問題，而腸胃敏感者建議餐後食用。本文統整蔓越莓3大禁忌，與適合補充蔓越莓7大族群，讓你一次掌握。
+      - text: 去看看
+  - article:
+    - link:
+      - /url: https://www.taitiansenyi.com/page/051
+      - figure:
+        - img "BlogA-2"
+    - link "斷食多久開始燃燒脂肪？如何知道？斷食多久產生酮體？斷食疑問一次解答 間歇性斷食可促進脂肪代謝與酮體生成，依不同斷食法約從12小時起逐步啟動燃脂機制。本文詳細解析斷食五階段變化、常見身體反應、適合的復食飲食與代謝營養補充建議，幫助你調整體態、強化代謝與提升健康效益。 去看看":
+      - /url: https://www.taitiansenyi.com/page/051
+      - text: 斷食多久開始燃燒脂肪？如何知道？斷食多久產生酮體？斷食疑問一次解答
+      - paragraph: 間歇性斷食可促進脂肪代謝與酮體生成，依不同斷食法約從12小時起逐步啟動燃脂機制。本文詳細解析斷食五階段變化、常見身體反應、適合的復食飲食與代謝營養補充建議，幫助你調整體態、強化代謝與提升健康效益。
+      - text: 去看看
+- article:
+  - article:
+    - link:
+      - /url: https://www.taitiansenyi.com/page/045
+      - figure:
+        - img "BlogA-1"
+    - link "膠原蛋白食物排行榜Top10：養出彈嫩好氣色，吃出澎潤少女肌！ 膠原蛋白是人體組織維持彈性與支撐的重要營養素，本文詳細整理膠原蛋白食物排行榜TOP10（如：豬腳、雞爪、魚皮）、補充功效、素食者攝取建議與熱門補充品推薦，助你全方位補對營養、養出彈潤光采與自然好氣色 去看看":
+      - /url: https://www.taitiansenyi.com/page/045
+      - text: 膠原蛋白食物排行榜Top10：養出彈嫩好氣色，吃出澎潤少女肌！
+      - paragraph: 膠原蛋白是人體組織維持彈性與支撐的重要營養素，本文詳細整理膠原蛋白食物排行榜TOP10（如：豬腳、雞爪、魚皮）、補充功效、素食者攝取建議與熱門補充品推薦，助你全方位補對營養、養出彈潤光采與自然好氣色
+      - text: 去看看
+  - article:
+    - link:
+      - /url: https://www.taitiansenyi.com/page/050
+      - figure:
+        - img "BlogA-2"
+    - link "精緻澱粉有哪些？常見食物種類、影響與5大飲食建議一次看懂 精緻澱粉常見於白飯、吐司、餅乾與蛋糕等加工主食，升糖指數高，容易造成脂肪堆積。本文詳細解析精緻澱粉與原型澱粉的差異，列出精緻澱粉的種類與健康飲食建議，幫助你聰明挑對主食，打造輕盈體態！ 去看看":
+      - /url: https://www.taitiansenyi.com/page/050
+      - text: 精緻澱粉有哪些？常見食物種類、影響與5大飲食建議一次看懂
+      - paragraph: 精緻澱粉常見於白飯、吐司、餅乾與蛋糕等加工主食，升糖指數高，容易造成脂肪堆積。本文詳細解析精緻澱粉與原型澱粉的差異，列出精緻澱粉的種類與健康飲食建議，幫助你聰明挑對主食，打造輕盈體態！
+      - text: 去看看
+- list:
+  - listitem:
+    - link:
+      - /url: "javascript: void(0)"
+      - figure:
+        - img "BannerA-1"
+- list:
+  - listitem:
+    - link:
+      - /url: https://www.facebook.com/NewLife150/
+      - figure:
+        - img "BannerB-1"
+  - listitem:
+    - link:
+      - /url: https://shope.ee/8KSLpD02YD
+      - figure:
+        - img "BannerB-2"
+  - listitem:
+    - link:
+      - /url: https://page.line.me/839sfhdh?openQrModal=true
+      - figure:
+        - img "BannerB-3"
+- list:
+  - listitem:
+    - link:
+      - /url: "javascript: void(0)"
+      - figure:
+        - img "BannerA-1"
+- heading "明山玫伊.com｜嚴選美妝×保健品｜全家需求一站滿足" [level=3]
+- article:
+  - paragraph: 明山玫伊精選高品質保健與美妝產品，從營養補給到肌膚保養，一站滿足全家人的日常所需。嚴選安心成分，結合專業配方，輕鬆掌握美麗與健康的重要關鍵，為自己和家人打造安心有效的日常保養方案！
+- contentinfo:
+  - iframe
+  - list:
+    - listitem:
+      - link "":
+        - /url: https://www.facebook.com/NewLife150
+    - listitem:
+      - link "":
+        - /url: https://line.me/R/ti/p/@839sfhdh
+    - listitem:
+      - link "":
+        - /url: https://www.instagram.com/newlife150121
+  - text: 關於我們
+  - list:
+    - listitem:
+      - link "商店簡介":
+        - /url: /shop/introduce/41795?t=1
+    - listitem:
+      - link "隱私權及網站使用條款":
+        - /url: /MyAccount/Privacy/41795
+  - text: 客服資訊
+  - list:
+    - listitem:
+      - link "購物說明":
+        - /url: /Shop/Introduce/41795?t=2
+    - listitem:
+      - link "客服留言":
+        - /url: /Question/QuestionInsert/0?sId=41795
+    - listitem:
+      - link "會員權益聲明":
+        - /url: /V2/MyAccount/VipMemberBenefits
+    - listitem:
+      - link "聯絡我們":
+        - /url: /Shop/Introduce/41795?t=3
+  - text: 官方APP
+  - textbox "請輸入台灣手機號碼"
+  - button "免費傳送載點至手機"
+  - button "確認"
+  - link:
+    - /url: https://play.google.com/store/apps/details?id=com.nineyi.shop.s041795
+  - link:
+    - /url: https://itunes.apple.com/tw/app/id6639609700
+  - text: 若接到可疑電話，請洽詢165反詐騙專線 © 2025 by 新享生活股份有限公司 本站最佳瀏覽環境請使用Google Chrome、Firefox或Edge以上版本 catalog-6579bb9b6c-pl6br
+- paragraph:
+  - text: 本網站中使用 cookie，欲查詢有關本網站使用 cookie 方式之詳情，及若您不希望在電腦上使用 cookie 時應如何變更電腦的 cookie 設定，請參閱本網站「
+  - link "隱私權及網站使用條款":
+    - /url: //www.taitiansenyi.com/MyAccount/Privacy?shopId=41795
+  - text: 」之 Cookie 聲明。您繼續使用本網站即表示您同意本公司得按本網站使用條款之 Cookie 聲明使用 cookie。
+- link "了解更多 >":
+  - /url: "#"
+- link "我知道了":
+  - /url: "#"
+- img: Ｘ
+- img "FullScreenAds-1"
+```

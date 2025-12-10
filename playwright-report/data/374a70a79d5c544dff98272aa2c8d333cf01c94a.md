@@ -1,0 +1,212 @@
+# Page snapshot
+
+```yaml
+- link "Skip to content":
+  - /url: "#zak-content"
+- banner:
+  - link "Practice E-Commerce Site":
+    - /url: https://practice.sdetunicorns.com/
+    - img "Practice E-Commerce Site"
+  - paragraph:
+    - link "Practice E-Commerce Site":
+      - /url: https://practice.sdetunicorns.com/
+  - paragraph: SDET Unicorns
+  - navigation:
+    - list:
+      - listitem:
+        - link "Home":
+          - /url: https://practice.sdetunicorns.com/
+      - listitem:
+        - link "About":
+          - /url: https://practice.sdetunicorns.com/about/
+      - listitem:
+        - link "Shop":
+          - /url: https://practice.sdetunicorns.com/shop/
+      - listitem:
+        - link "Blog":
+          - /url: https://practice.sdetunicorns.com/blog/
+      - listitem:
+        - link "Contact":
+          - /url: https://practice.sdetunicorns.com/contact/
+      - listitem:
+        - link "My account":
+          - /url: https://practice.sdetunicorns.com/my-account/
+  - link:
+    - /url: "#"
+    - img
+  - listitem:
+    - link "9":
+      - /url: https://practice.sdetunicorns.com/cart/
+      - img
+      - text: "9"
+  - link "Courses":
+    - /url: https://sdetunicorns.com/courses
+- heading "Cart" [level=1]
+- navigation "Breadcrumbs":
+  - list:
+    - listitem:
+      - link "Home":
+        - /url: https://practice.sdetunicorns.com/
+      - text: /
+    - listitem: Cart
+- main:
+  - article:
+    - table:
+      - rowgroup:
+        - row "Upload files":
+          - cell "Upload files"
+    - table:
+      - rowgroup:
+        - row "Select File Upload File":
+          - cell:
+            - textbox
+          - cell "Select File":
+            - button "Select File"
+          - cell "Upload File":
+            - button "Upload File" [disabled]
+    - table:
+      - rowgroup:
+        - row:
+          - cell
+    - table:
+      - rowgroup:
+        - row "Remove item Thumbnail image Product Price Quantity Subtotal":
+          - cell "Remove item"
+          - cell "Thumbnail image"
+          - columnheader "Product"
+          - columnheader "Price"
+          - columnheader "Quantity"
+          - columnheader "Subtotal"
+      - rowgroup:
+        - row "Remove Zurich Watch from cart Zurich Watch Zurich Watch $200.00 - Zurich Watch quantity 4 + $800.00":
+          - cell "Remove Zurich Watch from cart":
+            - button "Remove Zurich Watch from cart": ×
+          - cell "Zurich Watch":
+            - link "Zurich Watch":
+              - /url: https://practice.sdetunicorns.com/product/zurich-watch/
+              - img "Zurich Watch"
+          - rowheader "Zurich Watch":
+            - link "Zurich Watch":
+              - /url: https://practice.sdetunicorns.com/product/zurich-watch/
+          - cell "$200.00"
+          - cell "- Zurich Watch quantity 4 +":
+            - button "-"
+            - text: Zurich Watch quantity
+            - spinbutton "Product quantity": "4"
+            - button "+"
+          - cell "$800.00"
+        - row "Remove Canon Antique Camera from cart Canon Antique Camera Canon Antique Camera $400.00 - Canon Antique Camera quantity 4 + $1,600.00":
+          - cell "Remove Canon Antique Camera from cart":
+            - button "Remove Canon Antique Camera from cart": ×
+          - cell "Canon Antique Camera":
+            - link "Canon Antique Camera":
+              - /url: https://practice.sdetunicorns.com/product/canon-antique-camera/
+              - img "Canon Antique Camera"
+          - rowheader "Canon Antique Camera":
+            - link "Canon Antique Camera":
+              - /url: https://practice.sdetunicorns.com/product/canon-antique-camera/
+          - cell "$400.00"
+          - cell "- Canon Antique Camera quantity 4 +":
+            - button "-"
+            - text: Canon Antique Camera quantity
+            - spinbutton "Product quantity": "4"
+            - button "+"
+          - cell "$1,600.00"
+        - row "Remove Converse from cart Converse Converse $120.00 - Converse quantity 1 + $120.00":
+          - cell "Remove Converse from cart":
+            - button "Remove Converse from cart": ×
+          - cell "Converse":
+            - link "Converse":
+              - /url: https://practice.sdetunicorns.com/product/converse/
+              - img "Converse"
+          - rowheader "Converse":
+            - link "Converse":
+              - /url: https://practice.sdetunicorns.com/product/converse/
+          - cell "$120.00"
+          - cell "- Converse quantity 1 +":
+            - button "-"
+            - text: Converse quantity
+            - spinbutton "Product quantity": "1"
+            - button "+"
+          - cell "$120.00"
+        - 'row "Coupon: Apply coupon Update cart"':
+          - 'cell "Coupon: Apply coupon Update cart"':
+            - text: "Coupon:"
+            - textbox "Coupon:"
+            - button "Apply coupon"
+            - button "Update cart" [disabled]
+    - heading "Cart totals" [level=2]
+    - table:
+      - rowgroup:
+        - row "Subtotal $2,520.00":
+          - cell "Subtotal"
+          - cell "$2,520.00"
+        - row "Total $2,520.00":
+          - cell "Total"
+          - cell "$2,520.00":
+            - strong: $2,520.00
+    - link "Proceed to checkout":
+      - /url: https://practice.sdetunicorns.com/checkout/
+- complementary:
+  - search:
+    - img
+    - text: "Search for:"
+    - searchbox "Search for:"
+  - heading "Recent Posts" [level=2]
+  - list:
+    - listitem:
+      - link "IFrame Sample":
+        - /url: https://practice.sdetunicorns.com/iframe-sample/
+    - listitem:
+      - link "Successful Marketing Ads for Your Business":
+        - /url: https://practice.sdetunicorns.com/successful-marketing-ads-for-your-business/
+    - listitem:
+      - link "Let’s Building Your Business from Scratch":
+        - /url: https://practice.sdetunicorns.com/lets-building-your-business-from-scratch/
+    - listitem:
+      - link "The Best Place to Invest Your Money":
+        - /url: https://practice.sdetunicorns.com/the-best-place-to-invest-your-money/
+    - listitem:
+      - link "The Big Seminar for Your Right Investment":
+        - /url: https://practice.sdetunicorns.com/the-big-seminar-for-your-right-investment/
+- contentinfo:
+  - paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit feugiat sit purus varius. Non in turpis tincidunt nulla. Condimentum ultrices nunc odio ante.
+  - heading "Quick Links" [level=2]
+  - list:
+    - listitem:
+      - link "Home":
+        - /url: https://practice.sdetunicorns.com/
+    - listitem:
+      - link "About":
+        - /url: https://practice.sdetunicorns.com/about/
+    - listitem:
+      - link "Blog":
+        - /url: https://practice.sdetunicorns.com/blog/
+    - listitem:
+      - link "Contact":
+        - /url: https://practice.sdetunicorns.com/contact/
+    - listitem:
+      - link "Support Form":
+        - /url: https://practice.sdetunicorns.com/support-form/
+  - heading "Latest Posts" [level=2]
+  - list:
+    - listitem:
+      - link "IFrame Sample":
+        - /url: https://practice.sdetunicorns.com/iframe-sample/
+    - listitem:
+      - link "Successful Marketing Ads for Your Business":
+        - /url: https://practice.sdetunicorns.com/successful-marketing-ads-for-your-business/
+    - listitem:
+      - link "Let’s Building Your Business from Scratch":
+        - /url: https://practice.sdetunicorns.com/lets-building-your-business-from-scratch/
+  - heading "Contact Us" [level=2]
+  - paragraph: "Ph. : +(123) 456-7890"
+  - paragraph: "Email : first.last@demos.com"
+  - paragraph: "Loc : Moon Street , 446 Jupiter"
+  - paragraph: "Open : 9AM – 6PM (Mon – Fri)"
+  - paragraph:
+    - text: Copyright © 2020
+    - link "SDET Unicorns":
+      - /url: https://sdetunicorns.com/
+- status
+```

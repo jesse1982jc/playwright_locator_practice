@@ -1,7 +1,9 @@
 import { test, expect } from "@playwright/test";
 
 test.beforeEach(async ({ page }) => {
-  await page.goto("https://testautomationpractice.blogspot.com/");
+  await page.goto("https://testautomationpractice.blogspot.com/", {
+    timeout: 5000,
+  });
 });
 
 test("Pagination Web Table", async ({ page }) => {
@@ -72,7 +74,7 @@ test("dattepicker", async ({ page }) => {
   await page
     .locator("table.ui-datepicker-calendar tbody tr")
     .nth(2)
-    .locator("td", { hasText: "13" })
+    .locator("td", { hasText: "15" })
     .click();
 
   //   await page.locator("div.date-picker-box #start-date").click();
@@ -89,7 +91,9 @@ test("label", async ({ page }) => {
 });
 
 test("iframe", async ({ page }) => {
-  await page.goto("https://www.globalsqa.com/demo-site/draganddrop/");
+  await page.goto("https://www.globalsqa.com/demo-site/draganddrop/", {
+    timeout: 3000,
+  });
   const frame = page.frameLocator('[rel-title="Photo Manager"] iframe');
   await frame
     .locator("ul li h5", { hasText: "High Tatras 3" })
